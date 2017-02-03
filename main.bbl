@@ -1,0 +1,131 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{Devoret1995}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=1fafdb272465e43127642cc30ed2f372}{%
+           family={Devoret},
+           familyi={D\bibinitperiod},
+           given={Michel\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{05a4566898f302d75d9e51d90d6063b2}
+      \strng{fullhash}{05a4566898f302d75d9e51d90d6063b2}
+      \strng{authornamehash}{05a4566898f302d75d9e51d90d6063b2}
+      \strng{authorfullhash}{05a4566898f302d75d9e51d90d6063b2}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Les Houches, Session LXIII}
+      \field{number}{8}
+      \field{title}{Quantum fluctuations in electrical circuits}
+      \field{volume}{7}
+      \field{year}{1995}
+    \endentry
+    \entry{Feynman1966}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=01a5bcd4c7f7ee6bbc796dc875763f26}{%
+           family={Feynman},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima P},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=abb72ce8c9a4858818014d516a4c0a15}{%
+           family={Leighton},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima B},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=4f87088a881a2ce53ad4cf6dac2c63fb}{%
+           family={Sands},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=76038d7a4d068428d8f7ef0dd84682fe}{%
+           family={Lindsay},
+           familyi={L\bibinitperiod},
+           given={R\bibnamedelima Bruce},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{257888b7cf1dd98859fb387e87e745f1}
+      \strng{fullhash}{d58883820c052cd0ddd345d59f28c9d7}
+      \strng{authornamehash}{257888b7cf1dd98859fb387e87e745f1}
+      \strng{authorfullhash}{d58883820c052cd0ddd345d59f28c9d7}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The feynman lectures on physics, vol. 3: Quantum mechanics}
+      \field{year}{1966}
+    \endentry
+    \entry{Harmans1997}{article}{}
+      \name{author}{1}{}{%
+        {{hash=068f74cbfc26060e8515405d3b1e39d6}{%
+           family={Harmans},
+           familyi={H\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{068f74cbfc26060e8515405d3b1e39d6}
+      \strng{fullhash}{068f74cbfc26060e8515405d3b1e39d6}
+      \strng{authornamehash}{068f74cbfc26060e8515405d3b1e39d6}
+      \strng{authorfullhash}{068f74cbfc26060e8515405d3b1e39d6}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Delft University}
+      \field{title}{Mesoscopic Physics: An Introduction}
+      \field{year}{1997}
+    \endentry
+    \entry{Pozar2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f2efe4413cec731305cec7adf0378490}{%
+           family={Pozar},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{f2efe4413cec731305cec7adf0378490}
+      \strng{fullhash}{f2efe4413cec731305cec7adf0378490}
+      \strng{authornamehash}{f2efe4413cec731305cec7adf0378490}
+      \strng{authorfullhash}{f2efe4413cec731305cec7adf0378490}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microwave engineering}
+      \field{year}{2009}
+    \endentry
+  \endsortlist
+  \missing{Reference2}
+  \missing{Reference3}
+  \missing{Reference1}
+\endrefsection
+\endinput
+

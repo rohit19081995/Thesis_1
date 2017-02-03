@@ -1,0 +1,21 @@
+% Encoding: UTF-8
+
+@Book{Pozar,
+  title         = {Microwave engineering},
+  publisher     = {John Wiley \& Sons},
+  year          = {2009},
+  author        = {Pozar, David M},
+  __markedentry = {[Wayne:]},
+}
+
+@Article{Devoret1995,
+  author        = {Devoret, Michel H and others},
+  title         = {Quantum fluctuations in electrical circuits},
+  journal       = {Les Houches, Session LXIII},
+  year          = {1995},
+  volume        = {7},
+  number        = {8},
+  __markedentry = {[Wayne:6]},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

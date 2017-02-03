@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nyt/global/}
+    \entry{Pozar}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f2efe4413cec731305cec7adf0378490}{%
+           family={Pozar},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{f2efe4413cec731305cec7adf0378490}
+      \strng{fullhash}{f2efe4413cec731305cec7adf0378490}
+      \strng{authornamehash}{f2efe4413cec731305cec7adf0378490}
+      \strng{authorfullhash}{f2efe4413cec731305cec7adf0378490}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microwave engineering}
+      \field{year}{2009}
+    \endentry
+  \endsortlist
+  \missing{Reference3}
+  \missing{Reference1}
+  \missing{Reference2}
+\endrefsection
+\endinput
+

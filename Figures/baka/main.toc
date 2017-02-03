@@ -1,0 +1,45 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{Declaration of Authorship}{iii}{section*.1}
+\contentsline {chapter}{Abstract}{vii}{section*.2}
+\contentsline {chapter}{Acknowledgements}{ix}{section*.3}
+\contentsline {chapter}{\numberline {1}Theory}{1}{chapter.14}
+\contentsline {section}{\numberline {1.1}Microwave Resonators}{1}{section.15}
+\contentsline {subsection}{\numberline {1.1.1}Waveguides}{1}{subsection.16}
+\contentsline {subsubsection}{General Waveguide}{1}{section*.17}
+\contentsline {subsubsection}{Rectangular Waveguide}{2}{section*.38}
+\contentsline {subsection}{\numberline {1.1.2}Rectangular Waveguide Resonators}{5}{subsection.80}
+\contentsline {section}{\numberline {1.2}Superconducting Qubits}{8}{section.103}
+\contentsline {subsection}{\numberline {1.2.1}Spin half qubits}{8}{subsection.104}
+\contentsline {subsection}{\numberline {1.2.2}Quantum Electrical Circuits}{8}{subsection.105}
+\contentsline {subsubsection}{Classical LC oscillator}{8}{section*.106}
+\contentsline {subsubsection}{Quantum LC oscillator}{8}{section*.108}
+\contentsline {subsubsection}{Nonlinear Harmonic Oscillator}{9}{section*.119}
+\contentsline {chapter}{\numberline {2}Chapter Title Here}{11}{chapter.122}
+\contentsline {section}{\numberline {2.1}Welcome and Thank You}{11}{section.123}
+\contentsline {section}{\numberline {2.2}Learning \LaTeX {}}{11}{section.124}
+\contentsline {subsection}{\numberline {2.2.1}A (not so short) Introduction to \LaTeX {}}{11}{subsection.125}
+\contentsline {subsection}{\numberline {2.2.2}A Short Math Guide for \LaTeX {}}{12}{subsection.126}
+\contentsline {subsection}{\numberline {2.2.3}Common \LaTeX {} Math Symbols}{12}{subsection.127}
+\contentsline {subsection}{\numberline {2.2.4}\LaTeX {} on a Mac}{12}{subsection.128}
+\contentsline {section}{\numberline {2.3}Getting Started with this Template}{12}{section.129}
+\contentsline {subsection}{\numberline {2.3.1}About this Template}{13}{subsection.130}
+\contentsline {section}{\numberline {2.4}What this Template Includes}{13}{section.131}
+\contentsline {subsection}{\numberline {2.4.1}Folders}{13}{subsection.132}
+\contentsline {subsection}{\numberline {2.4.2}Files}{13}{subsection.133}
+\contentsline {section}{\numberline {2.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{14}{section.134}
+\contentsline {section}{\numberline {2.6}The \texttt {main.tex} File Explained}{15}{section.135}
+\contentsline {section}{\numberline {2.7}Thesis Features and Conventions}{16}{section.136}
+\contentsline {subsection}{\numberline {2.7.1}Printing Format}{16}{subsection.137}
+\contentsline {subsection}{\numberline {2.7.2}Using US Letter Paper}{16}{subsection.138}
+\contentsline {subsection}{\numberline {2.7.3}References}{16}{subsection.139}
+\contentsline {subsubsection}{A Note on bibtex}{17}{section*.141}
+\contentsline {subsection}{\numberline {2.7.4}Tables}{17}{subsection.142}
+\contentsline {subsection}{\numberline {2.7.5}Figures}{18}{subsection.144}
+\contentsline {subsection}{\numberline {2.7.6}Typesetting mathematics}{19}{subsection.146}
+\contentsline {section}{\numberline {2.8}Sectioning and Subsectioning}{19}{section.148}
+\contentsline {section}{\numberline {2.9}In Closing}{20}{section.149}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{21}{appendix.150}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{21}{section.151}
+\contentsline {chapter}{Bibliography}{23}{appendix*.152}
