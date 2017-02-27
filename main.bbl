@@ -19,6 +19,29 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{Cottet2002d}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=940a7f1e567905756cd67545d3aaae2e}{%
+           family={Cottet},
+           familyi={C\bibinitperiod},
+           given={Audrey},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {PhD Thesis, Université Paris 6}%
+      }
+      \strng{namehash}{940a7f1e567905756cd67545d3aaae2e}
+      \strng{fullhash}{940a7f1e567905756cd67545d3aaae2e}
+      \strng{authornamehash}{940a7f1e567905756cd67545d3aaae2e}
+      \strng{authorfullhash}{940a7f1e567905756cd67545d3aaae2e}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Implementation of a quantum bit in a superconducting circuit}
+      \field{type}{phdthesis}
+      \field{year}{2002}
+    \endentry
     \entry{Devoret1995}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -122,9 +145,28 @@
       \field{title}{Microwave engineering}
       \field{year}{2009}
     \endentry
+    \entry{Schuster2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1444bed561538c3e637f8c0e4fce3c00}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima Isaac},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{1444bed561538c3e637f8c0e4fce3c00}
+      \strng{fullhash}{1444bed561538c3e637f8c0e4fce3c00}
+      \strng{authornamehash}{1444bed561538c3e637f8c0e4fce3c00}
+      \strng{authorfullhash}{1444bed561538c3e637f8c0e4fce3c00}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Circuit quantum electrodynamics}
+      \field{year}{2007}
+    \endentry
   \endsortlist
-  \missing{Reference2}
   \missing{Reference3}
+  \missing{Reference2}
   \missing{Reference1}
 \endrefsection
 \endinput

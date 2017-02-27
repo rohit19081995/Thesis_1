@@ -19,9 +19,15 @@ At high frequencies, the geometry and properties of the material plays an import
 %-----------------------------------
 \subsection{Waveguides}
 
-There are many different types of waveguides. Some of them are shown in Fig. \ref{fig:waveguides}. The case we will be dealing with in this thesis pertains to recangular waveguide.
+There are many different types of waveguides. Some of them are shown in Fig. \ref{fig:waveguides}. The case we will be dealing with in this thesis pertains to rectangular waveguide.
 
-%----------- FILL THE WAVEGUIDE FIGURE ----------------
+\begin{figure}
+\centering
+\includegraphics{Figures/Waveguides}
+\decoRule
+\caption[Waveguide Types]{Types of Waveguides and Transmission Lines}
+\label{fig:waveguides}
+\end{figure}
 
 \subsubsection{General Waveguide}
 
@@ -196,7 +202,7 @@ e_y& =\frac{j\omega\mu}{k_c^2}k_x(-A\sin(k_xx)+B\cos(k_xx))(C\cos(k_yy)+D\sin(k_
 Now applying the boundary conditions,\\
 from \ref{eqn:ex boundary} we get $D=0$ and $k_y=n\pi/b$ for $n={0,1,2\ldots}$,\\
 and from \ref{eqn:ey boundary} we get $B=0$ and $k_x=m\pi/a$ for $m={0,1,2\ldots}$.\\
-From this we know the propogation constant is
+From this we know the propagation constant is
 \begin{equation}
 \beta = \sqrt{k^2-k_c^2}=\sqrt{k^2-\left(\frac{m\pi}{a}\right)^2-\left(\frac{n\pi}{b}\right)^2}
 \end{equation}
@@ -367,8 +373,9 @@ Q&=\omega\frac{\text{average energy stored}}{\text{average power loss}}\\
 \end{split}
 \end{align}
 
-\subsection{Coupling to and External Circuit}
+\subsection{Coupling to an External Circuit}
 
+\iffalse
 A resonator is useless if we cannot communicate with it in some way. There are many ways of interacting with a resonator. In the experiments to follow, the rectangular cavity resonator will be coupled to and external circuit through a probe of height $h$ inserted at the $y=0$ wall at $x=a/2$ and $z=z_0$. A figure of the probe inserted in the rectangular cavity is shown in Fig.\ref{fig:Probe}.
 
 %---------FILL THE PROBE FIGURE------------------------
@@ -444,6 +451,8 @@ Combining \ref{eqn:lhs reciprocity} and \ref{eqn:rhs reciprocity}, the non trivi
 \begin{align}
 A^+=\frac{-2I_0hZ_{TE}}{ba}e^{-j\dfrac{\pi z_0}{d}}
 \end{align}
+
+\fi
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
@@ -457,6 +466,13 @@ A^+=\frac{-2I_0hZ_{TE}}{ba}e^{-j\dfrac{\pi z_0}{d}}
 \subsubsection{Classical LC oscillator}
 
 %------------ FILL THE LC OSCILLATOR FIGURE -----------
+\begin{figure}
+\centering
+\includegraphics[width=150pt]{Figures/LC_oscillator}
+\decoRule
+\caption[LC oscillator]{LC oscillator circuit}
+\label{fig:LC oscillator}
+\end{figure}
 
 The LC oscillator, shown in Fig.\ref{fig:LC oscillator}, when treated classically has a charge $q$ on the capacitor, and a flux $\phi$ in the inductor. The flux is related to the charge via the inductance as $\phi=L\dfrac{dq}{dt}$. The Hamiltonian for this circuit is
 \begin{equation}
@@ -509,7 +525,13 @@ The general solution to the Schr\"{o}dinger equation $\hat{\mathcal{H}}\ket{\psi
 \end{equation}
 The first few energy levels along with the corresponding wavefunctions are shown in Fig.\ref{fig:harmonic oscillator}.
 
-%--------- FILL THE HARMONIC OSCILLATOR FIGURE --------
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/harmonic_oscillator}
+\decoRule
+\caption[Harmonic Oscillator Energy Levels]{The harmonic oscillator potential showing the Energy Levels $E_1,E_2,\ldots$ along with the corresponding wavefunctions $\psi_1,\psi_2,\ldots$. Replacing the position coordinate here with charge would give us the Energy levels for an LC oscillator.Taken from \\© \href{https://pl.wikipedia.org/wiki/Wikipedysta:Tomasz59}{User:Tomasz59} / \href{http://commons.wikimedia.org/}{Wikimedia Commons} / \href{http://creativecommons.org/licenses/by-sa/3.0/}{CC-BY-SA-3.0}}
+\label{fig:harmonic oscillator}
+\end{figure}
 
 \subsubsection{Nonlinear Harmonic Oscillator}
 
@@ -517,27 +539,35 @@ Note that the energy levels in the Simple Harmonic Oscillator (SHO) or the LC os
 
 A Nonlinear Harmonic Oscillator is one where the energy levels do not increase linearly. We can create a nonlinear oscillator by adding a perturbation to the Hamiltonian. The new Hamiltonian will be of the form
 \begin{equation}
-\hat{\mathcal{H}}=\frac{q^2}{2C}+\frac{\phi^2}{2L} +H'
+\hat{\mathcal{H}}=\frac{q^2}{2C}+\frac{\phi^2}{2L} +\mathcal{H}'
 \end{equation}
 where $H'$ is the perturbation term.
 The energy levels for this new Hamiltonian can be written in terms of the unperturbed Hamiltonian using perturbation theory as
 \begin{equation}
-E_n=E_n^{(0)}+\expval{H'}{n^{(0)}}+\sum_{k\neq n}\frac{\left|\mel{k^{(0)}}{H'}{n^{(0)}}\right|^2}{E_n^{(0)}-E_k^{(0)}}+\ldots
+E_n=E_n^{(0)}+\expval{\mathcal{H}'}{n^{(0)}}+\sum_{k\neq n}\frac{\left|\mel{k^{(0)}}{\mathcal{H}'}{n^{(0)}}\right|^2}{E_n^{(0)}-E_k^{(0)}}+\ldots
 \end{equation}
 where,\\
 $E_n$ is the new energy for the $n$th eigenstate,\\
 $E_n^{(0)}$ is the energy for the $n$th eigenstate of the unperturbed Hamiltonian,\\
-$\expval{H'}{n^{(0)}}$ is the first order correction to the energy and\\
-$\sum_{k\neq n}\frac{\left|\mel{k^{(0)}}{H'}{n^{(0)}}\right|^2}{E_n^{(0)}-E_k^{(0)}}$ is the second order correction to the energy.
+$\expval{\mathcal{H}'}{n^{(0)}}$ is the first order correction to the energy and\\
+$\sum_{k\neq n}\frac{\left|\mel{k^{(0)}}{\mathcal{H}'}{n^{(0)}}\right|^2}{E_n^{(0)}-E_k^{(0)}}$ is the second order correction to the energy.
 
-If the perturbation $H'$ is not a constant (i.e $H'(n)\neq H'(m)$ where $n\neq m$), then we can access only the ground state and the first exited state with one frequency of photons. This is because if the particle is in the first excited state, and another photon of the same energy ($E_{10}=E_1-E_0$) is supplied to the system, it will not excite the particle further.
+If the perturbation $\mathcal{H}'$ is not a constant (i.e $\mathcal{H}'(n)\neq \mathcal{H}'(m)$ where $n\neq m$), then we can access only the ground state and the first exited state with one frequency of photons. This is because if the particle is in the first excited state, and another photon of the same energy ($E_{10}=E_1-E_0$) is supplied to the system, it will not excite the particle further.
 
 This means that we can selectively access only 2 states. If we can manipulate such a 2 level system and it's interactions, we have a qubit!
 
 \subsection{The Josephson Junction}
 
 The \JJ is the nonlinear element used in the described experiments due to it's negligible dissipation rate which is essential for working in the quantum regime.\\
-The \JJ is made of 2 superconductors coupled by a weak link. In our case the junction is an S-I-S (Superconductor-Insulator-Superconductor) junction.
+The \JJ is made of 2 superconductors coupled by a weak link. In our case the junction is an S-I-S (Superconductor-Insulator-Superconductor) junction as shown in Fig.\ref{fig:SISJJ}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/SISJJ}
+\decoRule
+\caption[Josephson Junction]{Simple geometric structure of a \JJ with A and B being superconducting regions and C being the thin insulating layer.}
+\label{fig:SISJJ}
+\end{figure}
 
 Electrons in a normal metal behave like fermions. But at very low temperatures, they form cooper pairs that act like bosons. Nearly all the bosons will be at the lowest energy in exactly the same state \cite{Feynman1966}. This means that the superconductor will have a macroscopic wavefunction with a single homogeneous amplitude and phase.
 
@@ -553,7 +583,7 @@ I_s&=I_0\sin\delta
 V&=\frac{\Phi_0}{2\pi}\dot{\delta}
 \label{eqn:JJ voltage}
 \end{align}
-where $\delta=\theta_2-\theta_1$ is the superconducting phase difference associated with the \JJ, $\Phi_0=h/2e$ is the flux quantum for a cooper pair and $I_0$ is the critical current of the junction.
+where $\delta=\theta_2-\theta_1$ is the superconducting phase difference\footnote{This phase difference $\delta$ is the generalized phase difference $\delta=\Delta\theta-\displaystyle\dfrac{2\pi}{\Phi_0}\int A\cdot dl$} associated with the \JJ, $\Phi_0=h/2e$ is the flux quantum for a cooper pair and $I_0$ is the critical current of the junction.
 
 We can view the \JJ as a nonlinear inductor and find the inductance simply by using $V=L_J\dfrac{dI_s}{dt}$ which gives $L_J$, the Josephson Inductance to be
 \begin{equation}
@@ -570,16 +600,118 @@ C\left(\frac{\hbar}{2e}\right)^2\frac{d^2\delta}{dt^2}+\frac{1}{R}\left(\frac{\h
 \end{equation}
 We can see that this is the equation of motion of a particle moving along the $\delta$ coordinate with\\ an acceleration $\dfrac{d^2\delta}{dt^2}$,\\ drag force proportional to velocity $\dfrac{d\delta}{dt}$ and\\ force due to the gradient of the potential energy as the last term.\\
 This leads to the "particle mass" given by
-\begin{align*}
+\begin{align}
 M&=C\left(\frac{\hbar}{2e}\right)^2&&\text{"particle mass"}\\
 U(I,\delta)&=-E_J\cos\delta-\left(\frac{\hbar}{2e}\right)I\delta&&\text{potential energy}
-\end{align*}
+\end{align}
 where $E_J$, the Josephson Energy is given by
 \begin{equation}
 E_J=\frac{\hbar}{2e}I_0=\frac{\Phi_0}{2\pi}I_0
 \end{equation}
+The current $I$ is usually so small that we can ignore that term making the potential energy
+\begin{equation}
+U=-E_J\cos\delta
+\label{eqn:JJ potential energy}
+\end{equation}
 
-To find the Hamiltonian of the \JJ
+The electrical energy stored in the capacitance is analogous to kinetic energy and can be calculated as
+\begin{equation}
+E_{kin}=\frac{1}{2}Mv^2=\frac{1}{2}C\left(\frac{\hbar}{2e}\right)^2\left(\frac{d\delta}{dt}\right)^2
+\end{equation}
 
 \subsection{The Cooper Pair Box}
 
+The \CPB circuit is shown in Fig.\ref{fig:cooperpairbox}. It consists of a superconducting island capacitively coupled (with capacitance $C_g$) to a voltage source ($V_g$) connected to ground, and a \JJ connected to the ground. The \JJ can be represented by a capacitance ($C_j$) and the bare \JJ (represented by $E_j$) as shown in the figure.
+
+\begin{figure}
+\centering
+\includegraphics{Figures/CPB}
+\decoRule
+\caption[\CPB circuit]{The \CPB circuit with the \JJ represented as a bare \JJ with Josephson Energy $E_J$ and a capacitance $C_j$.}
+\label{fig:cooperpairbox}
+\end{figure}
+
+The electrical energy of this circuit is the energy stored in the 2 capacitors, $C_g$ and $C_j$. If the total charge of the superconducting island is $-n|e|$, then the electrical energy ($\mathcal{H}_{el}$) is given by \cite{Schuster2007}
+%---------------------------------------------------------
+% Maybe you can show this in Appendix
+%--------------------------------------------------------
+\begin{equation}
+\hat{\mathcal{H}_{el}}=4E_C(\hat{n}-n_g)^2
+\end{equation}
+where $\hat{n}\ket{n}=n\ket{n}$, $\ket{n}$ is the charge state with $n$ cooper pairs.\\
+$E_C=e^2/2C_\Sigma=e^2/2(Cj+Cg)$ is the energy required to add one electron to the island and $n_g=C_gV_g/e$.\\
+The energy levels are shown in Fig.\ref{fig:CPB EJ=0} for $E_J=0$. The \JJ would allow charge to tunnel through at $n_g=0.5,-0.5,1.5,-1.5\ldots$ in order to maintain the lowest energy.
+
+%---------E_J=0 energy levels---------------------------
+
+However, to calculate the complete Hamiltonian, we must also take into account the energy of the bare \JJ ($H_J$) which is given by.
+\begin{equation}
+\hat{\mathcal{H}_J}=-E_J\cos\hat{\delta}
+\end{equation}
+This is the tunnelling energy in the phase basis. To find the expression in the charge basis, we start with the commutation relation between charge and phase (See Appendix 1-A-2 from \cite{Cottet2002d}).
+\begin{align}
+\left[\hat{n},\hat{\delta}\right]&=-j
+\end{align}
+Using this and the commutator identity \ref{eqn:comm identity}, we get \ref{eqn:n->n+p}.
+\begin{align}
+\left[\hat{n},\hat{\delta}^m\right]&=\hat{\delta}^{m-1}\left[\hat{n},\hat{\delta}\right]+\hat{\delta}\left[\hat{n},\hat{\delta}^{m-1}\right]
+\label{eqn:comm identity}\\
+\end{align}
+we can recursively use this relation to get
+\begin{align}
+\left[\hat{n},\hat{\delta}^m\right]&=-jm(\hat{\delta})^{m-1}\\
+\hat{n}\hat{\delta}^m&=-jm\hat{\delta}^{m-1}+\hat{\delta}^m\hat{n}
+\end{align}
+The operator $\hat{n}e^{jp\hat{\delta}}$ after expansion is
+\begin{align}
+\begin{split}
+\hat{n}e^{jp\hat{\delta}}&=\hat{n}\sum_{m=0}^\infty \frac{( jp\hat{\delta})^m}{m!}=\sum_{m=0}^\infty \frac{(jp)^m\hat{n}\hat{\delta}^m}{m!}\\
+&=\sum_{m=0}^\infty \frac{(jp)^m\hat{n}(\hat{\delta})^m}{m!}\\
+&=\sum_{m=0}^\infty \frac{(jp)^m(-jm\hat{\delta}^{m-1}+\hat{\delta}^m\hat{n})}{m!}\\
+&=\sum_{m=0}^\infty \frac{(jp)^m(-jm\hat{\delta}^{m-1})}{m!}+\sum_{m=0}^\infty \frac{(jp\hat{\delta})^m\hat{n}}{m!}\\
+&=p\sum_{m=1}^\infty \frac{(jp\hat{\delta})^{m-1}}{(m-1)!}+\sum_{m=0}^\infty \frac{(jp\hat{\delta})^m\hat{n}}{m!}
+\end{split}\\
+\hat{n}e^{jp\hat{\delta}}&=pe^{jp\hat{\delta}}+e^{jp\hat{\delta}}\hat{n}
+\end{align}
+Using this operator on the charge state $\ket{n}$ gives
+\begin{align}
+\hat{n}\lbrace e^{jp\hat{\delta}}\ket{n}\rbrace&=pe^{jp\hat{\delta}}\ket{n}+e^{jp\hat{\delta}}\hat{n}\ket{n}\\
+&=(n+p)\lbrace e^{jp\hat{\delta}}\ket{n}\rbrace\\
+\implies e^{jp\hat{\delta}}\ket{n}&=\ket{n+p}
+\end{align}
+So, we can see that
+\begin{align}
+e^{ip\hat{\delta}}&=\sum_{m=-\infty}^\infty \ket{m+p}\bra{m}\\
+\begin{split}
+\cos\hat{\delta}=\frac{1}{2}\left(e^{i\hat{\delta}}+e^{-i\hat{\delta}}\right)&=\frac{1}{2}\left(\sum_{m=-\infty}^\infty \ket{m+1}\bra{m}+\sum_{m=-\infty}^\infty \ket{m-1}\bra{m}\right)\\
+&=\frac{1}{2}\sum_{n=-\infty}^{+\infty}\ket{n}\bra{n+1}+\ket{n+1}\bra{n}
+\end{split}
+\end{align}
+\begin{equation}
+\hat{\mathcal{H}_J}=-\frac{E_J}{2}\left(\sum_{n=-\infty}^{+\infty}\ket{n}\bra{n+1}+\ket{n+1}\bra{n}\right)
+\end{equation} 
+
+So the complete Hamiltonian in the charge basis is the sum of these
+\begin{equation}
+\hat{\mathcal{H}}=\sum_{n=-\infty}^{+\infty}\left(4E_C(\hat{n}-n_g)^2\ket{n}\bra{n}-\frac{E_J}{2}\ket{n}\bra{n+1}+\ket{n+1}\bra{n}\right)
+\end{equation}
+
+In the phase basis we can replace $\hat{n}$ with $-i\dfrac{\partial}{\partial\delta}$ to get
+\begin{equation}
+\hat{\mathcal{H}}=4E_C\left(-i\frac{\partial}{\partial\delta}-n_g\right)^2-E_J\cos\delta
+\end{equation}
+
+The energy eigenstates $\ket{k}$ are given by the schr\"{o}dinger equation
+\begin{equation}
+\hat{\mathcal{H}}(n_g)\ket{k}=E_k\ket{k}
+\end{equation}
+
+The energy levels ($E_k$) plotted against gate charge ($n_g$) for different $E_J/E_C$ values are shown in Fig.\ref{fig:diff EJ/EC}.
+
+%-----------Fig for different EJ/EC---------------------
+
+As we can see the charge noise is very low for the case of high $E_J/E_C$. Also, anharmonicity, which is defined as $\alpha=E_{21}-E_{10}$, is reduced but not zero. In-fact, charge noise reduces exponentially while anharmonicity reduces only algebraically as $E_J/E_C$ is increased. This is the basis on which the transmon qubit is realised.
+
+\subsection{The 3D Superconducting Transmon}
+
+A Transmon is basically a \CPB in which the \JJ is shunted with a large capacitance in order to decrease $E_C$ and so increase $E_J/E_C$.

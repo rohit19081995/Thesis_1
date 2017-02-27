@@ -2145,15 +2145,16 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Pozar2009</bcf:citekey>
     <bcf:citekey order="2">Pozar2009</bcf:citekey>
-    <bcf:citekey order="3">Pozar2009</bcf:citekey>
-    <bcf:citekey order="4">Devoret1995</bcf:citekey>
-    <bcf:citekey order="5">Feynman1966</bcf:citekey>
+    <bcf:citekey order="3">Devoret1995</bcf:citekey>
+    <bcf:citekey order="4">Feynman1966</bcf:citekey>
+    <bcf:citekey order="5">Harmans1997</bcf:citekey>
     <bcf:citekey order="6">Harmans1997</bcf:citekey>
-    <bcf:citekey order="7">Harmans1997</bcf:citekey>
-    <bcf:citekey order="8">Reference1</bcf:citekey>
-    <bcf:citekey order="9">Reference2</bcf:citekey>
+    <bcf:citekey order="7">Schuster2007</bcf:citekey>
+    <bcf:citekey order="8">Cottet2002d</bcf:citekey>
     <bcf:citekey order="9">Reference1</bcf:citekey>
-    <bcf:citekey order="10">Reference3</bcf:citekey>
+    <bcf:citekey order="10">Reference2</bcf:citekey>
+    <bcf:citekey order="10">Reference1</bcf:citekey>
+    <bcf:citekey order="11">Reference3</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

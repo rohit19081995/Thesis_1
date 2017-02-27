@@ -1,19 +1,19 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'main.blg'
-[53] biber-MSWIN64:303> INFO - === 
-[122] Biber.pm:359> INFO - Reading 'main.bcf'
-[245] Biber.pm:835> INFO - Found 7 citekeys in bib section 0
-[267] Biber.pm:3670> INFO - Processing section 0
-[318] Biber.pm:3840> INFO - Looking for bibtex format file 'example.bib' for section 0
-[321] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[333] bibtex.pm:1292> INFO - Found BibTeX data source 'example.bib'
-[342] Utils.pm:164> WARN - I didn't find a database entry for 'Reference1' (section 0)
-[342] Utils.pm:164> WARN - I didn't find a database entry for 'Reference2' (section 0)
-[343] Utils.pm:164> WARN - I didn't find a database entry for 'Reference3' (section 0)
-[361] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[361] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[361] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[362] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[367] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[369] bbl.pm:712> INFO - Output to main.bbl
-[372] Biber.pm:109> INFO - WARNINGS: 3
+[50] biber-MSWIN64:303> INFO - === 
+[113] Biber.pm:359> INFO - Reading 'main.bcf'
+[233] Biber.pm:835> INFO - Found 9 citekeys in bib section 0
+[253] Biber.pm:3670> INFO - Processing section 0
+[303] Biber.pm:3840> INFO - Looking for bibtex format file 'example.bib' for section 0
+[309] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[326] bibtex.pm:1292> INFO - Found BibTeX data source 'example.bib'
+[339] Utils.pm:164> WARN - I didn't find a database entry for 'Reference1' (section 0)
+[339] Utils.pm:164> WARN - I didn't find a database entry for 'Reference2' (section 0)
+[339] Utils.pm:164> WARN - I didn't find a database entry for 'Reference3' (section 0)
+[360] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[360] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[360] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[360] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[376] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[377] bbl.pm:712> INFO - Output to main.bbl
+[380] Biber.pm:109> INFO - WARNINGS: 3

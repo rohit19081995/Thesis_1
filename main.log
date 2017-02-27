@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.12.29)  3 FEB 2017 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.12.29)  24 FEB 2017 10:03
 entering extended mode
 **./main.tex
 (main.tex
@@ -2829,14 +2829,14 @@ Package biblatex Info: ... file 'main.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Reference2
+(biblatex)                Reference3
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Reference3
+(biblatex)                Reference2
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -2942,12 +2942,12 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 198.
  (main.toc
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 33.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 35.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 35.
 
 1: section
 [11])
@@ -3006,9 +3006,16 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 20.
+<Figures/Waveguides.pdf, id=377, 407.6831pt x 238.52112pt>
+File: Figures/Waveguides.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:waveguides' on page 1 undefined on input line 22.
+<use Figures/Waveguides.pdf>
+Package pdftex.def Info: Figures/Waveguides.pdf used on input line 26.
+(pdftex.def)             Requested size: 407.6821pt x 238.52052pt.
 
+Overfull \hbox (3.65302pt too wide) in paragraph at lines 26--28
+ [][] 
+ []
 
 1: section
 [1
@@ -3016,29 +3023,64 @@ LaTeX Warning: Reference `fig:waveguides' on page 1 undefined on input line 22.
 
 
 
-] [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+] [2 <./Figures/Waveguides.pdf>] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
-[5] [6] [7]
+[5] [6] [7] <Figures/LC_oscillator.png, id=527, 645.41125pt x 527.9725pt>
+File: Figures/LC_oscillator.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:Probe' on page 8 undefined on input line 372.
+<use Figures/LC_oscillator.png>
+Package pdftex.def Info: Figures/LC_oscillator.png used on input line 471.
+(pdftex.def)             Requested size: 150.0pt x 122.704pt.
+ [8 <./Figures/LC_oscillator.png (PNG copy)>]
+<Figures/harmonic_oscillator.png, id=540, 750.805pt x 506.89375pt>
+File: Figures/harmonic_oscillator.png Graphic file (type png)
 
-[8]
+<use Figures/harmonic_oscillator.png>
+Package pdftex.def Info: Figures/harmonic_oscillator.png used on input line 530
+.
+(pdftex.def)             Requested size: 404.02908pt x 272.77493pt.
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 532.
+ [9] [10 <./Figures/harmonic_oscillator.png (PNG copy)>] <Figures/SISJJ.png, id
+=569, 501.875pt x 328.22626pt>
+File: Figures/SISJJ.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:LC oscillator' on page 9 undefined on input line 
-461.
+<use Figures/SISJJ.png>
+Package pdftex.def Info: Figures/SISJJ.png used on input line 566.
+(pdftex.def)             Requested size: 404.02908pt x 264.24913pt.
+ [11] [12 <./Figures/SISJJ.png>]
+<Figures/CPB.pdf, id=602, 124.96687pt x 125.75984pt>
+File: Figures/CPB.pdf Graphic file (type pdf)
+ <use Figures/CPB.pdf>
+Package pdftex.def Info: Figures/CPB.pdf used on input line 628.
+(pdftex.def)             Requested size: 124.96657pt x 125.75952pt.
 
-[9] [10]
 
-LaTeX Warning: Reference `fig:harmonic oscillator' on page 11 undefined on inpu
-t line 510.
+LaTeX Warning: Reference `fig:CPB EJ=0' on page 13 undefined on input line 643.
 
-[11] [12]) [13]
+
+[13 <./Figures/CPB.pdf>]
+
+LaTeX Warning: Reference `eqn:n->n+p' on page 14 undefined on input line 655.
+
+[14]
+
+LaTeX Warning: Reference `fig:diff EJ/EC' on page 15 undefined on input line 70
+9.
+
+)
+Overfull \hbox (3.48062pt too wide) in paragraph at lines 717--265
+\T1/ppl/m/n/10.95 A Trans-mon is ba-si-cally a Cooper Pair Box in which the Jos
+eph-son Junc-tion is shunted
+ []
+
+[15]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (Chapters/Chapter6.tex [14
+ (Chapters/Chapter6.tex [16
 
 
 
@@ -3049,19 +3091,19 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 31.
 1: section
-[15]
+[17]
 Overfull \hbox (22.73018pt too wide) in paragraph at lines 44--47
 \T1/ppl/m/n/10.95 Guide for L[]T[]X. It can be found on-line here: [][]$\T1/pc
 r/m/n/10.95 http : / / www . ams . org / tex / amslatex .
  []
 
-[16]
+[18]
 Overfull \hbox (0.51039pt too wide) in paragraph at lines 78--79
 []\T1/ppl/m/n/10.95 Sunil's tem-plate was made avail-able through [][]$\T1/pcr/
 m/n/10.95 http : / / www . LaTeXTemplates .
  []
 
-[17]
+[19]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 136.
 
@@ -3070,29 +3112,29 @@ Overfull \hbox (4.4566pt too wide) in paragraph at lines 142--143
 ve the []\T1/pcr/m/n/10.95 \href{url}{name}
  []
 
-[18]
+[20]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.95> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 168.
- [19]
+ [21]
 Overfull \hbox (24.70317pt too wide) in paragraph at lines 180--181
 \T1/ppl/m/n/10.95 sided print-ing is as sim-ple as un-com-ment-ing the \T1/pcr/
 m/sl/10.95 oneside \T1/ppl/m/n/10.95 op-tion of the \T1/pcr/m/n/10.95 documentc
 lass
  []
 
-[20]
+[22]
 Overfull \hbox (21.97092pt too wide) in paragraph at lines 225--225
 []\T1/pcr/m/n/10 \caption{The effects of treatments X and Y on the four groups 
 studied.}[] 
  []
 
-[21] <Figures/Electron.pdf, id=640, 398.3386pt x 284.52756pt>
+[23] <Figures/Electron.pdf, id=711, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 
 <use Figures/Electron.pdf>
 Package pdftex.def Info: Figures/Electron.pdf used on input line 262.
 (pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
- [22 <./Figures/Electron.pdf>]
+ [24 <./Figures/Electron.pdf>]
 Overfull \hbox (19.1404pt too wide) in paragraph at lines 308--309
 \T1/ppl/m/n/10.95 au-to-mat-i-cally builds a ta-ble of Con-tents by look-ing at
  all the []\T1/pcr/m/n/10.95 \chapter{}\T1/ppl/m/n/10.95 , []\T1/pcr/m/n/10.95 
@@ -3105,136 +3147,77 @@ Overfull \hbox (8.65474pt too wide) in paragraph at lines 310--311
 hree (3) lev-els. A []\T1/pcr/m/n/10.95 chapter{}
  []
 
-[23]) [24]
+[25]) [26]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (Appendices/AppendixA.tex
 Appendix A.
 )
 1: section
-[25
+[27
 
 
 
-] [26
+] [28
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
 
 1: section
-[27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
+[29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter6.aux) (Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 345EC2472E03C4574095B7502881A8E6;7758.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: FDE62CD7F2E891184588BB2DD7BD7F10;7373
-(rerunfilecheck)             After:  371E8A87982FCFA9FD6978F8850251C5;7538.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34036 strings out of 493333
- 674332 string characters out of 3139193
- 1087776 words of memory out of 3000000
- 36926 multiletter control sequences out of 15000+200000
+ 34074 strings out of 493333
+ 675246 string characters out of 3139193
+ 1079019 words of memory out of 3000000
+ 36961 multiletter control sequences out of 15000+200000
  68676 words of font info for 141 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,20n,82p,10379b,2302s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.caption.166} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.168} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.175} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.174} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.173} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.171} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.169} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.167} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.165} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.164} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.160} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.157} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.155} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.154} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.153} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.152} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.148} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.146} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.145} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/symbols/msbm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/courier/ucrb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palat
-ino/uplri8a.pfb>
-Output written on main.pdf (51 pages, 430370 bytes).
+ 59i,20n,82p,10379b,2302s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/courier/ucrb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/co
+urier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (53 pages, 684300 bytes).
 PDF statistics:
- 858 PDF objects out of 1000 (max. 8388607)
- 251 named destinations out of 1000 (max. 500000)
- 358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 250 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 
