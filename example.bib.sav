@@ -50,15 +50,14 @@
 }
 
 @Article{Koch2007a,
-  author        = {Koch, Jens and Terri, M Yu and Gambetta, Jay and Houck, Andrew A and Schuster, DI and Majer, J and Blais, Alexandre and Devoret, Michel H and Girvin, Steven M and Schoelkopf, Robert J},
-  title         = {Charge-insensitive qubit design derived from the Cooper pair box},
-  journal       = {Physical Review A},
-  year          = {2007},
-  volume        = {76},
-  number        = {4},
-  pages         = {042319},
-  __markedentry = {[Wayne:]},
-  publisher     = {APS},
+  author    = {Koch, Jens and Terri, M Yu and Gambetta, Jay and Houck, Andrew A and Schuster, DI and Majer, J and Blais, Alexandre and Devoret, Michel H and Girvin, Steven M and Schoelkopf, Robert J},
+  title     = {Charge-insensitive qubit design derived from the Cooper pair box},
+  journal   = {Physical Review A},
+  year      = {2007},
+  volume    = {76},
+  number    = {4},
+  pages     = {042319},
+  publisher = {APS},
 }
 
 @Article{Paik2011,
@@ -69,8 +68,20 @@
   volume        = {107},
   number        = {24},
   pages         = {240501},
-  __markedentry = {[Wayne:6]},
+  __markedentry = {[Wayne:]},
   publisher     = {APS},
+}
+
+@Article{Johansson2012,
+  author        = {Johansson, JR and Nation, PD and Nori, Franco},
+  title         = {QuTiP: An open-source Python framework for the dynamics of open quantum systems},
+  journal       = {Computer Physics Communications},
+  year          = {2012},
+  volume        = {183},
+  number        = {8},
+  pages         = {1760--1772},
+  __markedentry = {[Wayne:6]},
+  publisher     = {Elsevier},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -283,11 +283,11 @@ where $\bar{e}(x,y)$ is the variation in the transverse fields.
 \end{equation}
 
 The new boundary conditions added now are that $E_t=0$ at the 2 new walls, $z=0$ and $z=d$.\\
-Putting $z=0$ into \ref{eqn:Et start} gives 
+For $z=0$, \ref{eqn:Et start} gives 
 \begin{equation}
 A^+=-A^-
 \end{equation}.\\
-Putting $z=d$ into \ref{eqn:Et start} gives
+For $z=d$, \ref{eqn:Et start} gives
 \begin{equation}
 -\bar{e}(x,y)A^+2j\sin(\beta_{mn}d)=0
 \end{equation}
@@ -642,7 +642,13 @@ where $\hat{n}\ket{n}=n\ket{n}$, $\ket{n}$ is the charge state with $n$ cooper p
 $E_C=e^2/2C_\Sigma=e^2/2(Cj+Cg)$ is the energy required to add one electron to the island and $n_g=C_gV_g/e$.\\
 The energy levels are shown in Fig.\ref{fig:CPB EJ=0} for $E_J=0$. The \JJ would allow charge to tunnel through at $n_g=0.5,-0.5,1.5,-1.5\ldots$ in order to maintain the lowest energy.
 
-%---------E_J=0 energy levels---------------------------
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/EjEc=0.png}
+\decoRule
+\caption[Energy Level for $E_J=0$]{Energy levels for $E_J=0$ or no tunneling. Anharmonicity ($\alpha = E_{21}-E_{10}$) is highest at $n_g=m+0.5$ where $m\in Z$.}
+\label{fig:CPB EJ=0}
+\end{figure}
 
 However, to calculate the complete Hamiltonian, we must also take into account the energy of the bare \JJ ($H_J$) which is given by.
 \begin{equation}
@@ -703,15 +709,48 @@ In the phase basis we can replace $\hat{n}$ with $-i\dfrac{\partial}{\partial\de
 
 The energy eigenstates $\ket{k}$ are given by the schr\"{o}dinger equation
 \begin{equation}
-\hat{\mathcal{H}}(n_g)\ket{k}=E_k\ket{k}
+\hat{\mathcal{H}}(n_g)\ket{k}=E_k(n_g)\ket{k}
 \end{equation}
 
-The energy levels ($E_k$) plotted against gate charge ($n_g$) for different $E_J/E_C$ values are shown in Fig.\ref{fig:diff EJ/EC}.
-
-%-----------Fig for different EJ/EC---------------------
-
-As we can see the charge noise is very low for the case of high $E_J/E_C$. Also, anharmonicity, which is defined as $\alpha=E_{21}-E_{10}$, is reduced but not zero. In-fact, charge noise reduces exponentially while anharmonicity reduces only algebraically as $E_J/E_C$ is increased. This is the basis on which the transmon qubit is realised.
+These eigenenergies can be solved analytically in the phase basis in terms of Mathieu functions. The eigenenergies are given by \cite{Koch2007a}
+\begin{equation}
+E_k(n_g)=E_Ca_{2[n_g+k(m,n_g)]}(-E_J/2E_C)
+\end{equation}
 
 \subsection{The 3D Superconducting Transmon}
 
 A Transmon is basically a \CPB in which the \JJ is shunted with a large capacitance in order to decrease $E_C$ and so increase $E_J/E_C$.
+
+The energy levels ($E_k$) plotted against gate charge ($n_g$) for different $E_J/E_C$ values are shown in Fig.\ref{fig:diff EJ/EC}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/EjEcall.png}
+\decoRule
+\caption[Different $E_J/E_C$]{Energy levels for different $E_J/E_C$ values. Charge noise goes to zero as $E_J/E_C$ increases. Anharmonicity is also low but non-zero.}
+\label{fig:diff EJ/EC}
+\end{figure}
+
+As we can see the charge noise is very low for the case of high $E_J/E_C$. Also, anharmonicity, which is defined as $\alpha=E_{21}-E_{10}$, is reduced but not zero. In-fact, charge noise reduces exponentially while anharmonicity reduces only algebraically as $E_J/E_C$ is increased. This is the basis on which the transmon qubit is realised.
+
+The Hamiltonian can also be solved using perturbation theory in the limit $E_J/E_C\gg 1$ by expanding the cosine in the tunnelling energy up to fourth order and treating the fourth order term as a perturbation. There is no dependence on $n_g$ because the system is charge insensitive at high $E_J/E_C$. The energy levels are \cite{Koch2007a}
+
+\begin{equation}
+E_k\approx-E_J+\sqrt{8E_CE_J}\left(k+\frac{1}{2}\right)-\frac{E_C}{12}(6k^2+6k+3)
+\label{eqn:transmon levels}
+\end{equation}
+
+From \ref{eqn:transmon levels} we can see that the qubit transition frequency ($\omega_{10}$) is
+\begin{equation}
+\omega_{10}=\frac{E_1-E_0}{\hbar}=\frac{\sqrt{8E_JE_C}}{\hbar}
+\end{equation}
+and the anharmonicity
+\begin{equation}
+\alpha=(E_2-E_1)-(E_1-E_0)=-E_C
+\end{equation}
+
+\subsection{Coupling the Transmon to a Resonator}
+
+For qubit readout and control, we will couple the qubit to a microwave cavity resonator. The lumped element circuit model of the qubit and cavity resonator is shown in Fig.\ref{fig:transmon with cavity}.
+
+The Jaynes-Cummings Hamiltonian shown in \ref{eqn:Jaynes Cummings} represents a two level system coupled to a harmonic resonator.

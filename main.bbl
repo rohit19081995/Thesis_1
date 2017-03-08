@@ -123,6 +123,78 @@
       \field{title}{Mesoscopic Physics: An Introduction}
       \field{year}{1997}
     \endentry
+    \entry{Koch2007a}{article}{}
+      \name{author}{10}{}{%
+        {{hash=1cfcd1c2a3fa4e4001bd362f97541505}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=03ee62b323c8075a9010b2137efd5bf5}{%
+           family={Terri},
+           familyi={T\bibinitperiod},
+           given={M\bibnamedelima Yu},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=dd07d6ee7739fa90b725f435718d629b}{%
+           family={Gambetta},
+           familyi={G\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a4ebf9207fbb4b95f5b5056dec2c374d}{%
+           family={Houck},
+           familyi={H\bibinitperiod},
+           given={Andrew\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1b246593ea40b6b422f3ff1528220b57}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={DI},
+           giveni={D\bibinitperiod}}}%
+        {{hash=27536e493b0873584921876c816317cc}{%
+           family={Majer},
+           familyi={M\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=760f3979cb2de6f22bc87f3ee4d52150}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1fafdb272465e43127642cc30ed2f372}{%
+           family={Devoret},
+           familyi={D\bibinitperiod},
+           given={Michel\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=70611517301e3a67d689360ee9db38ed}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={Steven\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b802461f4c4a07879ade560d9b31f03c}{%
+           family={Schoelkopf},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{993580a9e3b6954bbfda9403d1598227}
+      \strng{fullhash}{b81cc9e318bf5dcc96126e55d343d367}
+      \strng{authornamehash}{993580a9e3b6954bbfda9403d1598227}
+      \strng{authorfullhash}{b81cc9e318bf5dcc96126e55d343d367}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{4}
+      \field{title}{Charge-insensitive qubit design derived from the Cooper pair box}
+      \field{volume}{76}
+      \field{year}{2007}
+      \field{pages}{042319}
+      \range{pages}{1}
+    \endentry
     \entry{Pozar2009}{book}{}
       \name{author}{1}{}{%
         {{hash=f2efe4413cec731305cec7adf0378490}{%
@@ -165,8 +237,8 @@
       \field{year}{2007}
     \endentry
   \endsortlist
-  \missing{Reference3}
   \missing{Reference2}
+  \missing{Reference3}
   \missing{Reference1}
 \endrefsection
 \endinput
