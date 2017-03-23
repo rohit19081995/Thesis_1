@@ -375,10 +375,57 @@ Q&=\omega\frac{\text{average energy stored}}{\text{average power loss}}\\
 
 \subsection{Coupling to an External Circuit}
 
-\iffalse
-A resonator is useless if we cannot communicate with it in some way. There are many ways of interacting with a resonator. In the experiments to follow, the rectangular cavity resonator will be coupled to and external circuit through a probe of height $h$ inserted at the $y=0$ wall at $x=a/2$ and $z=z_0$. A figure of the probe inserted in the rectangular cavity is shown in Fig.\ref{fig:Probe}.
+A resonator is useless if we cannot communicate with it in some way. There are many ways of interacting with a resonator. In the experiments to follow, the rectangular cavity resonator will be coupled to and external circuit through a probe of height $h$ inserted at the $y=0$ wall at $x=a/4$ and $z=z_0$. A figure of the probe inserted in the rectangular cavity is shown in Fig.\ref{fig:Probe}.
 
-%---------FILL THE PROBE FIGURE------------------------
+\begin{figure}
+\centering
+\includegraphics[width=250px]{Figures/probe}
+\decoRule
+\caption[Probe in resonator]{The probe is inserted up to a height $h$ into the cavity. The other end of the probe is a coaxial cable whose outer terminal is connected to the cavity.}
+\label{fig:Probe}
+\end{figure}
+
+The equivalent circuit, shown in Fig.\ref{fig:external circuit} for this setup would be a paralell RLC circuit capacitively coupled to the measurement device, which in this case is a VNA (Vector Network Analyzer).
+
+\begin{figure}
+\centering
+\includegraphics[width=250px]{Figures/equivalent}
+\decoRule
+\caption[External coupling circuit]{The equivalent circuit for the resonator is a parallel RLC circuit.The external losses are in the external inpedence Z of the meaasurement device. The energy in the resonator leaks to the external circuit at a rate $\kappa_e\propto 1/C_c$. The internal losses are due to the resistance R. The rate of instrinsic energy loss in the resonator is $\kappa_i = \kappa - \kappa_e$ where $\kappa$ is the FWHM of the $S_{11}$ response of the resonator.}
+\label{fig:external circuit}
+\end{figure}
+
+The $S_{11}$ response for this circuit is given by \cite{Aspelmeyer2014}
+\begin{equation}
+S_{11}(\omega) = 1-\frac{\kappa_e}{\kappa/2-j(\omega-\omega_0)}
+\end{equation}
+where\\
+$\omega_0$ is the resonant frequency of the cavity,\\
+$\kappa = \Delta\omega$ is the FWHM of the resonance peak which represents total losses,\\
+$\kappa_e$ is the part of $\kappa$ which represents the losses to the external circuit through the capacitor $C_c$.\\
+The quality factor can be calculated using $Q = \omega_0/\text{FWHM}$. The internal, external and total quality factors can be calculated using
+\begin{align}
+Q_{total} &= \frac{\omega_0}{\kappa}\\
+Q_{external} &= \frac{\omega_0}{\kappa_e}\\
+Q_{internal} &= \left(\frac{1}{Q_{total}}-\frac{1}{Q_{external}}\right)^{-1}\\
+\end{align}
+
+The $S_{11}$ response of the cavity is asymmetrical, as shown in Fig. \ref{fig:cavity response}, due to the finite cable length and finite isolation of the directional coupler.
+\begin{itemize}
+\item The effect of the finite cable length is an added frequency dependent phase factor $\text{exp}(2j\omega l/v_p)$ where $l$ is the cable length and $v_p=c/\sqrt{\epsilon_r}$ is the phase velocity. The '$2$' in the expression is because the cable length is traversed twice.\\
+This factor is multiplied to the original expression for $S_{11}$ in \ref{eqn:S11 sym}.
+\item The effect of the finite isolation of the directional coupler is modelled by considering a part of the signal as a complex background ($\alpha e^{j\phi}$) and the rest of the signal ($(1-\alpha)S_{11}$) as the $S_{11}$ response.
+\end{itemize}
+So the final function used to fit the data and get the parameters $\omega_0$,$\kappa$ and $\kappa$ is
+\begin{equation}
+S_{11}(\omega) = \alpha e^{j\phi}+(1-\alpha)\left(1-\frac{\kappa_e}{\kappa/2-j(\omega-\omega_0)}\right)e^{2j\omega l/v_p}
+\end{equation}
+
+
+
+
+\iffalse
+
 
 To determine the amplitude of the wave generated due to a current density $\bar{J}(x,y,z)$ in the resonator, we can use the reciprocity theorem derived in \cite{Pozar2009}.
 \begin{equation}
@@ -459,11 +506,7 @@ A^+=\frac{-2I_0hZ_{TE}}{ba}e^{-j\dfrac{\pi z_0}{d}}
 
 \section{Superconducting Qubits}
 
-\subsection{Spin half qubits}
-
-\subsection{Quantum Electrical Circuits}
-
-\subsubsection{Classical LC oscillator}
+\subsection{Classical LC oscillator}
 
 %------------ FILL THE LC OSCILLATOR FIGURE -----------
 \begin{figure}
@@ -479,6 +522,8 @@ The LC oscillator, shown in Fig.\ref{fig:LC oscillator}, when treated classicall
 \mathcal{H}=\frac{q^2}{2C}+\frac{\phi^2}{2L}
 \end{equation}
 
+\subsection{Quantum Electrical Circuits}
+
 \subsubsection{Quantum LC oscillator}
 
 Observe that the 2 variables involved in the LC oscillator, $q$ and $\phi=L\dfrac{dq}{dt}$, are similar in form to the position and momentum operators in quantum mechanics, $\hat{x}$ and $\hat{p}=-j\hbar\dfrac{\partial}{\partial x}$. Even the Hamiltonian is of the same form.\parencite{Devoret1995}
@@ -488,14 +533,15 @@ Observe that the 2 variables involved in the LC oscillator, $q$ and $\phi=L\dfra
 Because of this, we can treat this circuit like the simple harmonic oscillator and introduce the annihilation and creation operators to define $\hat{q}$, $\hat{\phi}$ and Hamiltonian operators as
 \begin{subequations}
 \begin{align}
-\hat{q}&=\frac{1}{j}\sqrt{\frac{\hbar}{2Z_0}}(a-a^\dag)\\
-\hat{\phi}&=\sqrt{\frac{\hbar Z_0}{2}}(a+a^\dag)\\
+\hat{\phi}&=\frac{1}{j}\sqrt{\frac{\hbar}{2Z_0}}(a-a^\dag)\\
+\hat{q}&=\sqrt{\frac{\hbar Z_0}{2}}(a+a^\dag)\\
 \hat{\mathcal{H}}&=\frac{\hbar\omega_0}{2}(a^\dag a+aa^\dag)=\hbar\omega_0\left(a^\dag a + \frac{1}{2}\right)
+\label{eqn:harmonic hamiltonian}
 \end{align}
 \end{subequations}
 where
 \begin{align*}
-[\hat{\phi},\hat{q}]=j\hbar&&
+[\hat{\phi},\hat{q}]=-j\hbar&&
 \omega_0=\frac{1}{\sqrt{LC}}&&
 Z_0=\sqrt{\frac{L}{C}}
 \end{align*}
@@ -505,15 +551,15 @@ We can write the wave-functions of the energy eigenstates of the LC oscillator a
 \begin{equation}
 \bra{x}\ket{0}=\psi_0=\left(\frac{C\omega_0}{\pi\hbar}\right)^\frac{1}{4}e^{-\left(\frac{C\omega_0}{2\hbar}\right)x^2}
 \end{equation}
-This solution can be obtained using $a^\dag\ket{0}=0$
+This solution can be obtained using $a\ket{0}=0$
 
-The rest of the eigenstates can be obtained by using the ladder operator $a$ since
+The rest of the eigenstates can be obtained by using the creation operator $a^\dag$ since
 \begin{equation}
-a\ket{n}=\sqrt{n+1}\ket{n+1}
+a^\dag\ket{n}=\sqrt{n+1}\ket{n+1}
 \end{equation}
 which gives
 \begin{equation}
-\ket{n}=\frac{(a)^n}{\sqrt{n!}}\ket{0}
+\ket{n}=\frac{(a^\dag)^n}{\sqrt{n!}}\ket{0}
 \end{equation}
 The energy corresponding to these states are
 \begin{equation}
@@ -532,6 +578,18 @@ The first few energy levels along with the corresponding wavefunctions are shown
 \caption[Harmonic Oscillator Energy Levels]{The harmonic oscillator potential showing the Energy Levels $E_1,E_2,\ldots$ along with the corresponding wavefunctions $\psi_1,\psi_2,\ldots$. Replacing the position coordinate here with charge would give us the Energy levels for an LC oscillator.Taken from \\© \href{https://pl.wikipedia.org/wiki/Wikipedysta:Tomasz59}{User:Tomasz59} / \href{http://commons.wikimedia.org/}{Wikimedia Commons} / \href{http://creativecommons.org/licenses/by-sa/3.0/}{CC-BY-SA-3.0}}
 \label{fig:harmonic oscillator}
 \end{figure}
+
+Coherent states of a harmonic oscillator are defined as the eigenstates of the amplitude operator, or annhilation operator $a$, such that
+\begin{equation}
+a\ket{\alpha} = \alpha\ket{\alpha}
+\end{equation}
+where $\alpha = |\alpha|e^{j\varphi}$ is a complex number and corresponds to the complex wave amplitude in classical optics. Thus coherent states are wave-like states of the electromagnetic oscillator is a complex number \cite{Glauber1963}.
+
+The coherent state $\ket{\alpha}$ can be represented in terms of the number states $\ket{n}$ as
+\begin{equation}
+\ket{\alpha} = \sum_{n=0}^\infty \frac{\alpha^n}{\sqrt{n!}}e^{-|\alpha|^2/2}\ket{n}
+\label{eqn:glauber expansion}
+\end{equation}
 
 \subsubsection{Nonlinear Harmonic Oscillator}
 
@@ -644,9 +702,9 @@ The energy levels are shown in Fig.\ref{fig:CPB EJ=0} for $E_J=0$. The \JJ would
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{Figures/EjEc=0.png}
+\includegraphics[width=300pt]{Figures/EjEc=0.png}
 \decoRule
-\caption[Energy Level for $E_J=0$]{Energy levels for $E_J=0$ or no tunneling. Anharmonicity ($\alpha = E_{21}-E_{10}$) is highest at $n_g=m+0.5$ where $m\in Z$.}
+\caption[Energy Level for $E_J=0$]{Energy levels for $E_J=0$ or no tunneling. This figure was generated using \cite{Johansson2012}.}
 \label{fig:CPB EJ=0}
 \end{figure}
 
@@ -657,8 +715,9 @@ However, to calculate the complete Hamiltonian, we must also take into account t
 This is the tunnelling energy in the phase basis. To find the expression in the charge basis, we start with the commutation relation between charge and phase (See Appendix 1-A-2 from \cite{Cottet2002d}).
 \begin{align}
 \left[\hat{n},\hat{\delta}\right]&=-j
+\label{eqn:commutation}
 \end{align}
-Using this and the commutator identity \ref{eqn:comm identity}, we get \ref{eqn:n->n+p}.
+Using \ref{eqn:commutation} and the commutator identity \ref{eqn:comm identity}, we get
 \begin{align}
 \left[\hat{n},\hat{\delta}^m\right]&=\hat{\delta}^{m-1}\left[\hat{n},\hat{\delta}\right]+\hat{\delta}\left[\hat{n},\hat{\delta}^{m-1}\right]
 \label{eqn:comm identity}\\
@@ -694,12 +753,13 @@ e^{ip\hat{\delta}}&=\sum_{m=-\infty}^\infty \ket{m+p}\bra{m}\\
 \end{split}
 \end{align}
 \begin{equation}
-\hat{\mathcal{H}_J}=-\frac{E_J}{2}\left(\sum_{n=-\infty}^{+\infty}\ket{n}\bra{n+1}+\ket{n+1}\bra{n}\right)
+\hat{\mathcal{H}}_J=-\frac{E_J}{2}\left(\sum_{n=-\infty}^{+\infty}\ket{n}\bra{n+1}+\ket{n+1}\bra{n}\right)
 \end{equation} 
 
 So the complete Hamiltonian in the charge basis is the sum of these
 \begin{equation}
 \hat{\mathcal{H}}=\sum_{n=-\infty}^{+\infty}\left(4E_C(\hat{n}-n_g)^2\ket{n}\bra{n}-\frac{E_J}{2}\ket{n}\bra{n+1}+\ket{n+1}\bra{n}\right)
+\label{eqn:charge basis ham}
 \end{equation}
 
 In the phase basis we can replace $\hat{n}$ with $-i\dfrac{\partial}{\partial\delta}$ to get
@@ -712,10 +772,11 @@ The energy eigenstates $\ket{k}$ are given by the schr\"{o}dinger equation
 \hat{\mathcal{H}}(n_g)\ket{k}=E_k(n_g)\ket{k}
 \end{equation}
 
-These eigenenergies can be solved analytically in the phase basis in terms of Mathieu functions. The eigenenergies are given by \cite{Koch2007a}
+These eigenenergies can be solved analytically in the phase basis in terms of Mathieu functions. The eigenenergies are given by
 \begin{equation}
 E_k(n_g)=E_Ca_{2[n_g+k(m,n_g)]}(-E_J/2E_C)
 \end{equation}
+where $a_\nu(q)$ denotes Mathieu’s characteristic value, and $k(m,n_g)$ is a function appropriately sorting the eigenvalues \cite{Koch2007a}.
 
 \subsection{The 3D Superconducting Transmon}
 
@@ -727,7 +788,7 @@ The energy levels ($E_k$) plotted against gate charge ($n_g$) for different $E_J
 \centering
 \includegraphics[width=\linewidth]{Figures/EjEcall.png}
 \decoRule
-\caption[Different $E_J/E_C$]{Energy levels for different $E_J/E_C$ values. Charge noise goes to zero as $E_J/E_C$ increases. Anharmonicity is also low but non-zero.}
+\caption[Different $E_J/E_C$]{Energy levels for different $E_J/E_C$ values. Charge noise goes to zero as $E_J/E_C$ increases. Anharmonicity is also low but non-zero. This figure was generated using \cite{Johansson2012}.}
 \label{fig:diff EJ/EC}
 \end{figure}
 
@@ -742,7 +803,7 @@ E_k\approx-E_J+\sqrt{8E_CE_J}\left(k+\frac{1}{2}\right)-\frac{E_C}{12}(6k^2+6k+3
 
 From \ref{eqn:transmon levels} we can see that the qubit transition frequency ($\omega_{10}$) is
 \begin{equation}
-\omega_{10}=\frac{E_1-E_0}{\hbar}=\frac{\sqrt{8E_JE_C}}{\hbar}
+\omega_{10}=\frac{E_1-E_0}{\hbar}=\frac{\sqrt{8E_JE_C}-E_C}{\hbar}
 \end{equation}
 and the anharmonicity
 \begin{equation}
@@ -751,6 +812,170 @@ and the anharmonicity
 
 \subsection{Coupling the Transmon to a Resonator}
 
-For qubit readout and control, we will couple the qubit to a microwave cavity resonator. The lumped element circuit model of the qubit and cavity resonator is shown in Fig.\ref{fig:transmon with cavity}.
+For qubit readout and control, we will couple the qubit to a microwave cavity resonator (A rectangular waveguide resonator in this case). The lumped element circuit model of the qubit and cavity resonator is shown in Fig.\ref{fig:transmon with cavity}.
 
-The Jaynes-Cummings Hamiltonian shown in \ref{eqn:Jaynes Cummings} represents a two level system coupled to a harmonic resonator.
+We can approximate the transmon as a 2 level system with a ground state $\ket{g}$ and excited state $\ket{e}$ for large anharmonicity. In this approximation, the Hamiltonian of the system is discussed below  \cite{Richer2013,Schuster2007}.
+\begin{itemize}
+\item The Hamiltonian of the transmon can be expressed as the following if we choose the coordinate system appropriately and the zero energy as the mean energy of the transmon
+\begin{equation}
+\hat{\mathcal{H}}_{qubit}=-\frac{\hbar\omega_q}{2}\sigma_z
+\label{eqn:qubit free hamiltonian}
+\end{equation}
+\item The Hamiltonian of the resonator is the same as the one for  an LC oscillator \ref{eqn:harmonic hamiltonian}
+\begin{equation}
+\hat{\mathcal{H}}_{cavity}=\hbar\omega_ra^\dag a
+\end{equation}
+The ground state energy of $\hbar\omega_r/2$ has not been shown as it does not have any significance in qubit dynamics.
+\item The interaction hamiltonian is given by 
+\begin{equation}
+\hat{\mathcal{H}}_{int}=\hbar g(a^\dag\sigma_-+a\sigma_+)
+\end{equation}
+where $g$ is the coupling constant, proportional to the amplitude of the signal. The rotating wave approximation is made here, ignoring terms with $a^\dag\sigma_+$ and $a\sigma_-$.
+\end{itemize}
+
+This gives us the Jaynes-Cummings Hamiltonian
+\begin{equation}
+\hat{\mathcal{H}}=\hbar\omega_ra^\dag a-\frac{\hbar\omega_q}{2}\sigma_z+\hbar g(a^\dag\sigma_-+a\sigma_+)
+\end{equation}
+
+The eigenstates for the coupled system are
+\begin{subequations}
+\label{eqn:coupled eigenstates}
+\begin{align}
+\ket{n,+} &= \cos\frac{\theta_n}{2}\ket{e}\ket{n}+\sin\frac{\theta_n}{2}\ket{g}\ket{n+1}\\
+\ket{n,-} &= -\sin\frac{\theta_n}{2}\ket{e}\ket{n}+\cos\frac{\theta_n}{2}\ket{g}\ket{n+1}
+\end{align}
+\end{subequations}
+with eigenenergies
+\begin{equation}
+E_{n\pm}=\hbar\omega_r n\pm\frac{\sqrt{\hbar^2\Delta^2+4g^2(n+1)}}{2}
+\end{equation}
+where $\Delta=\omega_r-\omega_q$ and
+\begin{equation}
+\theta_n = \tan^{-1}\left(\frac{2g\sqrt{n+1}}{\hbar \Delta}\right)
+\end{equation}
+
+\subsection{The Bloch Sphere}
+
+A general pure state for a two level system can represented as
+\begin{equation}
+\ket{\psi} = \alpha\ket{0}+\beta\ket{1}
+\end{equation}
+where $\ket{0}$ and $\ket{1}$ form an orthonormal basis. $\alpha=|\alpha|e^{j\phi_1}$ and $\beta=|\beta|e^{jphi_2}$ are complex numbers with a constraint that $|\alpha|^2+|\beta|^2 = 1$ due to normalization. Since one can only measure the phase difference $\phi = \phi_2-\phi_1$, the state can be represented as
+\begin{equation}
+\ket{\psi} = \cos\frac{\theta}{2}\ket{0}+e^{j\phi}\sin\frac{\theta}{2}\ket{1}
+\end{equation}
+with no loss of generality where $\theta= 2\cos^{-1}|\alpha|$.
+
+This state can be represented on a sphere with spherical coordinated with $\rho = 1$. The $\ket{0}$,$\ket{1}$ and an arbitrary state is shown in the Bloch Sphere in Fig.\ref{fig:bloch rep}.
+
+%------------- BLOCH REPRESENTATION---------------------
+
+\subsection{Dynamics of the Jaynes-Cummings system}
+
+Let us consider the dynamics of the system in three different cases that are relevant to qubit manipulation and readout.
+\begin{itemize}
+\item \textbf{Zero Coupling} ($g=0$)\\
+If there is no coupling (no photons in the cavity), then the qubit follows the free Hamiltonian given by \ref{eqn:qubit free hamiltonian}. The energy eigenstates of this system are $\ket{g}$ and $\ket{e}$ with energies $-\hbar\omega_q/2$ and $\hbar\omega_q/2$ respectively. In this basis, the Hamiltonian of the qubit can be expressed as
+\begin{equation}
+\hat{\mathcal{H}}_{qubit} = -\hbar\omega_q/2\ket{e}\bra{e} + \hbar\omega_q/2\ket{g}\bra{g}
+\end{equation}
+Applying the unitary operator $e^{i\hat{\mathcal{H}}t/\hbar}$ to an initial superposition state $\ket{\psi(0)}=\alpha\ket{e}+\beta\ket{g}$ gives the state at a time $t$
+\begin{align}
+\begin{split}
+\ket{\psi(t)} &= e^{i\hat{\mathcal{H}}t/\hbar}\ket{\psi(0)}\\
+&=e^{-i\omega_qt/2}\left(\alpha\ket{e}+e^{i\omega_q t}\beta{g}\right)
+\end{split}
+\end{align}
+
+%----------BLOCH SPHERE REPRESENTATION--------------
+
+We can see that if the qubit starts in an eigenstate, it remains in the same state (only a phase factor is added), but if it starts in a superposition, it's phase oscillates as a function of time with a frequency equal to the qubit frequency. On the bloch sphere this can be represented as a precession about the $z$-axis.
+
+We can consider the dynamics of the coupled system in a similar way, once we change the basis to the new energy eigenstates in \ref{eqn:coupled eigenstates}.
+
+\item \textbf{On Resonance} ($\Delta\ll g$)\\
+If the drive signal or photons are at the same frequency as the qubit, then $\Delta=0$, which implies $\theta_n=\pi/2$. Then the eigenstates are
+\begin{subequations}
+\label{eqn:delta zero eigenstates}
+\begin{align}
+\ket{n,+} &= \frac{1}{\sqrt{2}}\ket{e}\ket{n}+\frac{1}{\sqrt{2}}\ket{g}\ket{n+1}\\
+\ket{n,-} &= -\frac{1}{\sqrt{2}}\ket{e}\ket{n}+\frac{1}{\sqrt{2}}\ket{g}\ket{n+1}
+\end{align}
+\end{subequations}
+With the new eigenstates, the qubit will oscillate about the $x$-axis. This means that if the initial state of the qubit is $\ket{g}$, it will oscillate to $\ket{e}$ in time $t=\pi g\sqrt{n+1}$. The excitation number of the cavity will also oscillate from $\ket{n+1}$ to $\ket{n}$ with the same frequency.
+
+%----------BLOCH SPHERE REPRESENTATION--------------
+
+It is worth noting that if the resonant frequency of the cavity is far from that of the qubit, and if the drive signal is of qubit frequency, then the qubit will still oscillate because it takes finite time for the photons to decay in the cavity.
+
+\item \textbf{Dispersive limit} ($\Delta\gg g$)\\
+In the dispersive limit, we can rewrite the Hamiltonian by considering $g/\Delta$ as a perturbation \cite{Schuster2007} to get
+\begin{equation}
+\hat{\mathcal{H}}=\hbar\left(\omega_r+\frac{g^2}{\Delta}\sigma_z\right)a^\dag a+\frac{\hbar}{2}\left(\omega_q+\frac{g^2}{\Delta}\right)\sigma_z
+\label{eqn:dispersive hamiltonian}
+\end{equation}
+
+%---------FIG OF DISPERSIVE SHIFT-----------------
+
+We can see from this Hamiltonian that dispersive coupling causes a shift of $\pm g^2/\Delta$ in the resonance frequency of the cavity depending on the qubit state. We can see the different S parameter responses for the ground and excited states of the qubit in Fig.\ref{fig:dispersive shift}. This shift is crucial to measuring the state of the qubit.
+We can also rearrange the equation as follows
+\begin{equation}
+\hat{\mathcal{H}}=\hbar\omega_r a^\dag a+\frac{\hbar}{2}\left(\omega_q+\frac{g^2}{\Delta}a^\dag a+\frac{g^2}{\Delta}\right)\sigma_z
+\end{equation}
+to see that the frequency of the qubit now has an added Lamb and ac-Stark shift of $g^2/\Delta$ and $g^2n/\Delta$ respectively \cite{Blais2004}.
+
+The Hamiltonian in \ref{eqn:dispersive hamiltonian} can be written as
+\begin{equation}
+\hat{\mathcal{H}} = \hat{\mathcal{H}}_0 + \hat{\mathcal{H}}_{int}
+\end{equation} 
+where
+\begin{equation}
+\hat{\mathcal{H}}_0=\hbar\omega_r a^\dag a + \frac{\hbar\omega_q}{2} \sigma_z\
+\end{equation}
+is the uncoupled Hamiltonian of the qubit and cavity and
+\begin{equation}
+\hat{\mathcal{H}}_{int}=\frac{\hbar g^2\sigma_z}{\Delta}\left(a^\dag a+\frac{1}{2}\right)
+\end{equation}
+is the interaction Hamiltonian.\\
+
+The unitary time evolution operator given by $\hat{U}(t)=e^{-j\hat{\mathcal{H}}t/\hbar}$ is
+\begin{align}
+\begin{split}
+\hat{U}(t) = \text{exp}\left(-j\hat{\mathcal{H}}_0t/\hbar\right)\Bigg[&\text{ exp}\left(-j\frac{g^2t}{\Delta}\left(\hat{n}+\frac{1}{2}\right)\right)\ket{g}\bra{g}\\
++&\text{ exp}\left(j\frac{g^2t}{\Delta}\left(\hat{n}+\frac{1}{2}\right)\right)\ket{e}\bra{e}\Bigg]
+\end{split}
+\end{align}
+If the initial state is such that the cavity is in a coherent state $\ket{\alpha}$ and the qubit is in a superposition state $(\ket{g}+\ket{e})/\sqrt{2}$, i.e
+\begin{equation}
+\ket{\psi(0)} = \frac{(\ket{g}+\ket{e})}{\sqrt{2}}\ket{\alpha}
+\end{equation}
+we can apply the unitary time evolution operator on this state and use the following relation
+\begin{equation}
+e^{i\varphi\hat{n}}\ket{\alpha} = \sum_{n=0}^\infty \frac{\alpha^ne^{i\varphi n}}{\sqrt{n!}}e^{-\frac{|\alpha|^2}{2}}\ket{n} = \ket{\alpha e^{i\varphi}}
+\end{equation}
+to get
+\begin{align}
+\begin{split}
+\ket{\psi(t)} &= \hat{U}(t)\ket{\psi(0)}\\
+&= \text{exp}\left(-j\hat{\mathcal{H}}_0t/\hbar\right)\frac{1}{\sqrt{2}}\Bigg[e^{-j\varphi/2}\ket{g}\ket{\alpha e^{-j\varphi}}+e^{j\varphi/2}\ket{e}\ket{\alpha e^{j\varphi}}\Bigg]
+\end{split}
+\end{align}
+where $\varphi = g^2t/\Delta$. We can see that the cavity and qubit states are now entangled. The qubit ground state is entangled with the coherent state rotated by an angle $-\varphi$ and the excited state is entangled with the coherent state rotated by an angle $\varphi$.
+
+At low powers, dispersive measurement is QND or Quantum Non-Demolition, which means that the qubit will remain in the eigenstate that was measured after a measurement. This means that repeated measurements will yield the same results.
+\end{itemize}
+
+\subsection{Decoherence}
+
+A qubit which is initially in a superposition state $\ket{\psi} = \alpha\ket{g}+\beta\ket{e}$ will not stay in the superposition forever. It will lose its quantum information stochastically at a rate described below. The time for which the qubit retains its quantum information is called "coherence time", and is denoted by $T_2$. There are 2 processes which cause decoherence \cite{Geerlings2013}.
+\begin{itemize}
+\item \textbf{Relaxation}
+The decay of the qubit to the ground state $\ket{g}$ due to spontaneous emission is referred to as relaxation. It does this at a rate $\Gamma_{\downarrow}$. If the qubit is in contact with a thermal bath at non zero temperature, there will also be excitation processes at a rate $\Gamma_{\uparrow}$. The combined effect gives the relaxation time $T_1 = \left(\Gamma_{\downarrow}+\Gamma_{\uparrow}\right)^{-1}$. Relaxation processes can be attributed to phenomena that cause energy fluctuations.
+\item \textbf{Dephasing}
+Dephasing is the process by which the qubit loses its phase information due to fluctuations is qubit frequency. These fluctuations cause the qubit to gain or lose phase and on average, lead to a diffused phase.
+\end{itemize}
+
+\subsection{Measurement Theory}
+
+The data presented in this thesis uses a low power, dispersive measurement technique described in \cite{Bianchetti2009}.

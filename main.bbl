@@ -19,6 +19,157 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{Aspelmeyer2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=32acda7ce77db07ff195294f84f2167b}{%
+           family={Aspelmeyer},
+           familyi={A\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=af98bff96fb04633db044e744f34d519}{%
+           family={Kippenberg},
+           familyi={K\bibinitperiod},
+           given={Tobias\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2bff26dabf13837f6e1bd103097e7e0a}{%
+           family={Marquardt},
+           familyi={M\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{166d39b219456f24dca52172b34553ea}
+      \strng{fullhash}{166d39b219456f24dca52172b34553ea}
+      \strng{authornamehash}{166d39b219456f24dca52172b34553ea}
+      \strng{authorfullhash}{166d39b219456f24dca52172b34553ea}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{4}
+      \field{title}{Cavity optomechanics}
+      \field{volume}{86}
+      \field{year}{2014}
+      \field{pages}{1391}
+      \range{pages}{1}
+    \endentry
+    \entry{Bianchetti2009}{article}{}
+      \name{author}{9}{}{%
+        {{hash=7cc91570113baf5d24a6e3201e918367}{%
+           family={Bianchetti},
+           familyi={B\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a7f3a78704fe60c4102bee68acb7ce72}{%
+           family={Filipp},
+           familyi={F\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d06dca373ac06d22ea0c49f28b22fac2}{%
+           family={Baur},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5dc3226cd4b486147cf429d98ba69344}{%
+           family={Fink},
+           familyi={F\bibinitperiod},
+           given={JM},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8e53972b5ef8a9182839299e0c9bd01c}{%
+           family={Göppl},
+           familyi={G\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=762335f211fd3d49429e63e4abcb0ed5}{%
+           family={Leek},
+           familyi={L\bibinitperiod},
+           given={PJ},
+           giveni={P\bibinitperiod}}}%
+        {{hash=270cc5c94f30ed61a50c7afc8161c13c}{%
+           family={Steffen},
+           familyi={S\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fbf1987305b8b3d1b5803d818c5785fd}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d18539c4a1208fd536ec9f5755b3ce32}{%
+           family={Wallraff},
+           familyi={W\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{52ae51cf4c3efded263e24630dfe7606}
+      \strng{fullhash}{df112ffc7affbf9fdb7080aa2d7c8e10}
+      \strng{authornamehash}{52ae51cf4c3efded263e24630dfe7606}
+      \strng{authorfullhash}{df112ffc7affbf9fdb7080aa2d7c8e10}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{4}
+      \field{title}{Dynamics of dispersive single-qubit readout in circuit quantum electrodynamics}
+      \field{volume}{80}
+      \field{year}{2009}
+      \field{pages}{043840}
+      \range{pages}{1}
+    \endentry
+    \entry{Blais2004}{article}{}
+      \name{author}{5}{}{%
+        {{hash=760f3979cb2de6f22bc87f3ee4d52150}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e22fb68a0a9e21159a491c249433edee}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Ren-Shou},
+           giveni={R\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=a4618fc5d2d71b35587cdc771e590b70}{%
+           family={Wallraff},
+           familyi={W\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=70611517301e3a67d689360ee9db38ed}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={Steven\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a03df5a2bce5cdc5548cd60ef8328d5f}{%
+           family={Schoelkopf},
+           familyi={S\bibinitperiod},
+           given={R\bibnamedelima Jun},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{fullhash}{1fd3f7261e903f080a6d636d2900df93}
+      \strng{authornamehash}{46728eee29178d1ed38b6aca5b46a568}
+      \strng{authorfullhash}{1fd3f7261e903f080a6d636d2900df93}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{6}
+      \field{title}{Cavity quantum electrodynamics for superconducting electrical circuits: An architecture for quantum computation}
+      \field{volume}{69}
+      \field{year}{2004}
+      \field{pages}{062320}
+      \range{pages}{1}
+    \endentry
     \entry{Cottet2002d}{thesis}{}
       \name{author}{1}{}{%
         {{hash=940a7f1e567905756cd67545d3aaae2e}{%
@@ -103,6 +254,52 @@
       \field{title}{The feynman lectures on physics, vol. 3: Quantum mechanics}
       \field{year}{1966}
     \endentry
+    \entry{Geerlings2013}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0e7e41eadef44a6736f3a3f8dd3967cd}{%
+           family={Geerlings},
+           familyi={G\bibinitperiod},
+           given={Kurtis\bibnamedelima Lee},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e7e41eadef44a6736f3a3f8dd3967cd}
+      \strng{fullhash}{0e7e41eadef44a6736f3a3f8dd3967cd}
+      \strng{authornamehash}{0e7e41eadef44a6736f3a3f8dd3967cd}
+      \strng{authorfullhash}{0e7e41eadef44a6736f3a3f8dd3967cd}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Improving coherence of superconducting qubits and resonators}
+      \field{year}{2013}
+    \endentry
+    \entry{Glauber1963}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cf8577f70380e0f962e98239cf825542}{%
+           family={Glauber},
+           familyi={G\bibinitperiod},
+           given={Roy\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{cf8577f70380e0f962e98239cf825542}
+      \strng{fullhash}{cf8577f70380e0f962e98239cf825542}
+      \strng{authornamehash}{cf8577f70380e0f962e98239cf825542}
+      \strng{authorfullhash}{cf8577f70380e0f962e98239cf825542}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{number}{6}
+      \field{title}{Coherent and incoherent states of the radiation field}
+      \field{volume}{131}
+      \field{year}{1963}
+      \field{pages}{2766}
+      \range{pages}{1}
+    \endentry
     \entry{Harmans1997}{article}{}
       \name{author}{1}{}{%
         {{hash=068f74cbfc26060e8515405d3b1e39d6}{%
@@ -122,6 +319,43 @@
       \field{journaltitle}{Delft University}
       \field{title}{Mesoscopic Physics: An Introduction}
       \field{year}{1997}
+    \endentry
+    \entry{Johansson2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e5316d76b303a1ea72437b38bb3e5a86}{%
+           family={Johansson},
+           familyi={J\bibinitperiod},
+           given={JR},
+           giveni={J\bibinitperiod}}}%
+        {{hash=253416dcfe3687f3a7b908e7295c722f}{%
+           family={Nation},
+           familyi={N\bibinitperiod},
+           given={PD},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2cfaf55a849299a0fe647e070cffada8}{%
+           family={Nori},
+           familyi={N\bibinitperiod},
+           given={Franco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{62a7917a6dcc5ae1ef4036bccb76dd1a}
+      \strng{fullhash}{62a7917a6dcc5ae1ef4036bccb76dd1a}
+      \strng{authornamehash}{62a7917a6dcc5ae1ef4036bccb76dd1a}
+      \strng{authorfullhash}{62a7917a6dcc5ae1ef4036bccb76dd1a}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Physics Communications}
+      \field{number}{8}
+      \field{title}{QuTiP: An open-source Python framework for the dynamics of open quantum systems}
+      \field{volume}{183}
+      \field{year}{2012}
+      \field{pages}{1760\bibrangedash 1772}
+      \range{pages}{13}
     \endentry
     \entry{Koch2007a}{article}{}
       \name{author}{10}{}{%
@@ -217,6 +451,34 @@
       \field{title}{Microwave engineering}
       \field{year}{2009}
     \endentry
+    \entry{Richer2013}{thesis}{}
+      \name{author}{2}{}{%
+        {{hash=31d3abb49e4b9b77fe6d446578f8f0fe}{%
+           family={Richer},
+           familyi={R\bibinitperiod},
+           given={Susanne},
+           giveni={S\bibinitperiod}}}%
+        {{hash=da492fac7d7ae1835c22a50df99e4892}{%
+           family={Terhal},
+           familyi={T\bibinitperiod},
+           given={Barbara\bibnamedelima M},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Master’s thesis, RWTH Aachen}%
+      }
+      \strng{namehash}{3b7e170f5a632450be9c4406860983b2}
+      \strng{fullhash}{3b7e170f5a632450be9c4406860983b2}
+      \strng{authornamehash}{3b7e170f5a632450be9c4406860983b2}
+      \strng{authorfullhash}{3b7e170f5a632450be9c4406860983b2}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Perturbative analysis of two-qubit gates on transmon qubits}
+      \field{type}{phdthesis}
+      \field{year}{2013}
+    \endentry
     \entry{Schuster2007}{book}{}
       \name{author}{1}{}{%
         {{hash=1444bed561538c3e637f8c0e4fce3c00}{%
@@ -237,9 +499,9 @@
       \field{year}{2007}
     \endentry
   \endsortlist
+  \missing{Reference1}
   \missing{Reference2}
   \missing{Reference3}
-  \missing{Reference1}
 \endrefsection
 \endinput
 
