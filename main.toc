@@ -5,47 +5,25 @@
 \contentsline {chapter}{\numberline {1}Theory}{1}{chapter.12}
 \contentsline {section}{\numberline {1.1}Microwave Resonators}{1}{section.13}
 \contentsline {subsection}{\numberline {1.1.1}Waveguides}{1}{subsection.14}
-\contentsline {subsubsection}{General Waveguide}{1}{section*.16}
-\contentsline {subsubsection}{Rectangular Waveguide}{4}{section*.37}
+\contentsline {subsubsection}{General Waveguide}{1}{subsubsection*.16}
+\contentsline {subsubsection}{Rectangular Waveguide}{4}{subsubsection*.37}
 \contentsline {subsection}{\numberline {1.1.2}Rectangular Waveguide Resonators}{7}{subsection.79}
-\contentsline {subsection}{\numberline {1.1.3}Coupling to an External Circuit}{10}{subsection.102}
-\contentsline {section}{\numberline {1.2}Superconducting Qubits}{13}{section.111}
-\contentsline {subsection}{\numberline {1.2.1}Classical LC oscillator}{13}{subsection.112}
-\contentsline {subsection}{\numberline {1.2.2}Quantum Electrical Circuits}{13}{subsection.115}
-\contentsline {subsubsection}{Quantum LC oscillator}{13}{section*.116}
-\contentsline {subsubsection}{Nonlinear Harmonic Oscillator}{16}{section*.130}
-\contentsline {subsection}{\numberline {1.2.3}The Josephson Junction}{16}{subsection.133}
-\contentsline {subsection}{\numberline {1.2.4}The Cooper Pair Box}{19}{subsection.146}
-\contentsline {subsection}{\numberline {1.2.5}The 3D Superconducting Transmon}{22}{subsection.168}
-\contentsline {subsection}{\numberline {1.2.6}Coupling the Transmon to a Resonator}{24}{subsection.173}
-\contentsline {subsection}{\numberline {1.2.7}The Bloch Sphere}{25}{subsection.183}
-\contentsline {subsection}{\numberline {1.2.8}Dynamics of the Jaynes-Cummings system}{25}{subsection.186}
-\contentsline {subsection}{\numberline {1.2.9}Decoherence}{28}{subsection.201}
-\contentsline {subsection}{\numberline {1.2.10}Measurement Theory}{29}{subsection.202}
-\contentsline {chapter}{\numberline {2}Chapter Title Here}{30}{chapter.203}
-\contentsline {section}{\numberline {2.1}Welcome and Thank You}{30}{section.204}
-\contentsline {section}{\numberline {2.2}Learning \LaTeX {}}{30}{section.205}
-\contentsline {subsection}{\numberline {2.2.1}A (not so short) Introduction to \LaTeX {}}{31}{subsection.206}
-\contentsline {subsection}{\numberline {2.2.2}A Short Math Guide for \LaTeX {}}{31}{subsection.207}
-\contentsline {subsection}{\numberline {2.2.3}Common \LaTeX {} Math Symbols}{31}{subsection.208}
-\contentsline {subsection}{\numberline {2.2.4}\LaTeX {} on a Mac}{32}{subsection.209}
-\contentsline {section}{\numberline {2.3}Getting Started with this Template}{32}{section.210}
-\contentsline {subsection}{\numberline {2.3.1}About this Template}{33}{subsection.211}
-\contentsline {section}{\numberline {2.4}What this Template Includes}{33}{section.212}
-\contentsline {subsection}{\numberline {2.4.1}Folders}{33}{subsection.213}
-\contentsline {subsection}{\numberline {2.4.2}Files}{34}{subsection.214}
-\contentsline {section}{\numberline {2.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{35}{section.215}
-\contentsline {section}{\numberline {2.6}The \texttt {main.tex} File Explained}{36}{section.216}
-\contentsline {section}{\numberline {2.7}Thesis Features and Conventions}{37}{section.217}
-\contentsline {subsection}{\numberline {2.7.1}Printing Format}{38}{subsection.218}
-\contentsline {subsection}{\numberline {2.7.2}Using US Letter Paper}{38}{subsection.219}
-\contentsline {subsection}{\numberline {2.7.3}References}{38}{subsection.220}
-\contentsline {subsubsection}{A Note on bibtex}{39}{section*.222}
-\contentsline {subsection}{\numberline {2.7.4}Tables}{40}{subsection.223}
-\contentsline {subsection}{\numberline {2.7.5}Figures}{41}{subsection.225}
-\contentsline {subsection}{\numberline {2.7.6}Typesetting mathematics}{42}{subsection.227}
-\contentsline {section}{\numberline {2.8}Sectioning and Subsectioning}{43}{section.229}
-\contentsline {section}{\numberline {2.9}In Closing}{43}{section.230}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{44}{appendix.231}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{44}{section.232}
-\contentsline {chapter}{Bibliography}{45}{appendix*.233}
+\contentsline {subsection}{\numberline {1.1.3}Coupling to an External Circuit}{11}{subsection.102}
+\contentsline {section}{\numberline {1.2}Superconducting Qubits}{17}{section.115}
+\contentsline {subsection}{\numberline {1.2.1}Classical LC oscillator}{17}{subsection.116}
+\contentsline {subsection}{\numberline {1.2.2}Quantum Electrical Circuits}{17}{subsection.119}
+\contentsline {subsubsection}{Quantum LC oscillator}{17}{subsubsection*.120}
+\contentsline {subsubsection}{Nonlinear Harmonic Oscillator}{20}{subsubsection*.134}
+\contentsline {subsection}{\numberline {1.2.3}The Josephson Junction}{20}{subsection.137}
+\contentsline {subsection}{\numberline {1.2.4}The Cooper Pair Box}{23}{subsection.150}
+\contentsline {subsection}{\numberline {1.2.5}The 3D Superconducting Transmon}{26}{subsection.172}
+\contentsline {subsection}{\numberline {1.2.6}Coupling the Transmon to a Resonator}{28}{subsection.177}
+\contentsline {subsection}{\numberline {1.2.7}The Bloch Sphere}{29}{subsection.187}
+\contentsline {subsection}{\numberline {1.2.8}Dynamics of the Jaynes-Cummings system}{29}{subsection.191}
+\contentsline {subsection}{\numberline {1.2.9}Decoherence}{35}{subsection.209}
+\contentsline {subsection}{\numberline {1.2.10}Measurement Theory}{36}{subsection.210}
+\contentsline {subsubsection}{Single tone measurement}{37}{subsubsection*.212}
+\contentsline {subsubsection}{Two tone measurement}{37}{subsubsection*.213}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{39}{appendix.214}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{39}{section.215}
+\contentsline {chapter}{Bibliography}{40}{appendix*.216}

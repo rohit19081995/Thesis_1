@@ -56,71 +56,41 @@
       \field{pages}{1391}
       \range{pages}{1}
     \endentry
-    \entry{Bianchetti2009}{article}{}
-      \name{author}{9}{}{%
-        {{hash=7cc91570113baf5d24a6e3201e918367}{%
-           family={Bianchetti},
+    \entry{Bishop2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=305bffb2374b23735ea3a04cac462f73}{%
+           family={Bishop},
            familyi={B\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=a7f3a78704fe60c4102bee68acb7ce72}{%
-           family={Filipp},
-           familyi={F\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=d06dca373ac06d22ea0c49f28b22fac2}{%
-           family={Baur},
-           familyi={B\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=5dc3226cd4b486147cf429d98ba69344}{%
-           family={Fink},
-           familyi={F\bibinitperiod},
-           given={JM},
-           giveni={J\bibinitperiod}}}%
-        {{hash=8e53972b5ef8a9182839299e0c9bd01c}{%
-           family={Göppl},
+           given={Lev\bibnamedelima S},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=81a791b3b800db98e5bf96246b7a72c7}{%
+           family={Ginossar},
            familyi={G\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=762335f211fd3d49429e63e4abcb0ed5}{%
-           family={Leek},
-           familyi={L\bibinitperiod},
-           given={PJ},
-           giveni={P\bibinitperiod}}}%
-        {{hash=270cc5c94f30ed61a50c7afc8161c13c}{%
-           family={Steffen},
-           familyi={S\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod}}}%
-        {{hash=fbf1987305b8b3d1b5803d818c5785fd}{%
-           family={Blais},
-           familyi={B\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d18539c4a1208fd536ec9f5755b3ce32}{%
-           family={Wallraff},
-           familyi={W\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
+           given={Eran},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2fe7ce38663715919c6b1b7ff878347f}{%
+           family={Girvin},
+           familyi={G\bibinitperiod},
+           given={SM},
+           giveni={S\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {APS}%
       }
-      \strng{namehash}{52ae51cf4c3efded263e24630dfe7606}
-      \strng{fullhash}{df112ffc7affbf9fdb7080aa2d7c8e10}
-      \strng{authornamehash}{52ae51cf4c3efded263e24630dfe7606}
-      \strng{authorfullhash}{df112ffc7affbf9fdb7080aa2d7c8e10}
+      \strng{namehash}{62305fcee5eb36e2a5443055acd3d211}
+      \strng{fullhash}{62305fcee5eb36e2a5443055acd3d211}
+      \strng{authornamehash}{62305fcee5eb36e2a5443055acd3d211}
+      \strng{authorfullhash}{62305fcee5eb36e2a5443055acd3d211}
       \field{sortinit}{B}
       \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review A}
-      \field{number}{4}
-      \field{title}{Dynamics of dispersive single-qubit readout in circuit quantum electrodynamics}
-      \field{volume}{80}
-      \field{year}{2009}
-      \field{pages}{043840}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{10}
+      \field{title}{Response of the strongly driven Jaynes-Cummings oscillator}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{100505}
       \range{pages}{1}
     \endentry
     \entry{Blais2004}{article}{}
@@ -168,6 +138,43 @@
       \field{volume}{69}
       \field{year}{2004}
       \field{pages}{062320}
+      \range{pages}{1}
+    \endentry
+    \entry{Boissonneault2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6f927c42ad158253ed16904e246ea146}{%
+           family={Boissonneault},
+           familyi={B\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod}}}%
+        {{hash=30758adf5b3ca5c5fcf4456de9c3449e}{%
+           family={Gambetta},
+           familyi={G\bibinitperiod},
+           given={JM},
+           giveni={J\bibinitperiod}}}%
+        {{hash=760f3979cb2de6f22bc87f3ee4d52150}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{d11758a354a375b48cf388cfff080de4}
+      \strng{fullhash}{d11758a354a375b48cf388cfff080de4}
+      \strng{authornamehash}{d11758a354a375b48cf388cfff080de4}
+      \strng{authorfullhash}{d11758a354a375b48cf388cfff080de4}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{10}
+      \field{title}{Improved superconducting qubit readout by qubit-induced nonlinearities}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{100504}
       \range{pages}{1}
     \endentry
     \entry{Cottet2002d}{thesis}{}
@@ -429,6 +436,80 @@
       \field{pages}{042319}
       \range{pages}{1}
     \endentry
+    \entry{Paik2011}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=4b69b69f9d1afede801f6a9b24967597}{%
+           family={Paik},
+           familyi={P\bibinitperiod},
+           given={Hanhee},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1b246593ea40b6b422f3ff1528220b57}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={DI},
+           giveni={D\bibinitperiod}}}%
+        {{hash=305bffb2374b23735ea3a04cac462f73}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Lev\bibnamedelima S},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=289343271284a5da5e4fc0c14fa3eff3}{%
+           family={Kirchmair},
+           familyi={K\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=daf26a25b240634eeb7e51cf296ed21e}{%
+           family={Catelani},
+           familyi={C\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b6c7f0d4aaf002950c50e077e762fc3a}{%
+           family={Sears},
+           familyi={S\bibinitperiod},
+           given={AP},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eea9c114d000c5986f227e3fb52f58f3}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={BR},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d03f44d167b9a2ca2f0df76725e68d0c}{%
+           family={Reagor},
+           familyi={R\bibinitperiod},
+           given={MJ},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a8867a4ca5f2d405dae9f54225bc88cd}{%
+           family={Frunzio},
+           familyi={F\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=111ff865896fa07dad416536544eea09}{%
+           family={Glazman},
+           familyi={G\bibinitperiod},
+           given={LI},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{bf434003fa4157a71a567ee47006b669}
+      \strng{fullhash}{cf1edfba8ccbc8593237c5f878ac2dfb}
+      \strng{authornamehash}{bf434003fa4157a71a567ee47006b669}
+      \strng{authorfullhash}{cf1edfba8ccbc8593237c5f878ac2dfb}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{24}
+      \field{title}{Observation of high coherence in Josephson junction qubits measured in a three-dimensional circuit QED architecture}
+      \field{volume}{107}
+      \field{year}{2011}
+      \field{pages}{240501}
+      \range{pages}{1}
+    \endentry
     \entry{Pozar2009}{book}{}
       \name{author}{1}{}{%
         {{hash=f2efe4413cec731305cec7adf0378490}{%
@@ -450,6 +531,63 @@
       \field{labeltitlesource}{title}
       \field{title}{Microwave engineering}
       \field{year}{2009}
+    \endentry
+    \entry{Reed2010}{article}{}
+      \name{author}{7}{}{%
+        {{hash=e34d0e616887430147069870d087dfa1}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={MD},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c833f31f50c58de50633781406def803}{%
+           family={DiCarlo},
+           familyi={D\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=eea9c114d000c5986f227e3fb52f58f3}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={BR},
+           giveni={B\bibinitperiod}}}%
+        {{hash=abe54d71a8749221df19e0ecf976f01c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1b246593ea40b6b422f3ff1528220b57}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={DI},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a8867a4ca5f2d405dae9f54225bc88cd}{%
+           family={Frunzio},
+           familyi={F\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=702489c1f664d1120cc37aafe7cdc98a}{%
+           family={Schoelkopf},
+           familyi={S\bibinitperiod},
+           given={RJ},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{a44ef7062b7e1c11046f89134b08485f}
+      \strng{fullhash}{79527bb8ad17dc7a0e62d0dbad39e2db}
+      \strng{authornamehash}{a44ef7062b7e1c11046f89134b08485f}
+      \strng{authorfullhash}{79527bb8ad17dc7a0e62d0dbad39e2db}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{17}
+      \field{title}{High-fidelity readout in circuit quantum electrodynamics using the Jaynes-Cummings nonlinearity}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{173601}
+      \range{pages}{1}
     \endentry
     \entry{Richer2013}{thesis}{}
       \name{author}{2}{}{%
@@ -499,9 +637,6 @@
       \field{year}{2007}
     \endentry
   \endsortlist
-  \missing{Reference1}
-  \missing{Reference2}
-  \missing{Reference3}
 \endrefsection
 \endinput
 

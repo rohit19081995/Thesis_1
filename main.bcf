@@ -2161,14 +2161,20 @@
     <bcf:citekey order="16">Koch2007a</bcf:citekey>
     <bcf:citekey order="17">Richer2013</bcf:citekey>
     <bcf:citekey order="17">Schuster2007</bcf:citekey>
-    <bcf:citekey order="18">Schuster2007</bcf:citekey>
-    <bcf:citekey order="19">Blais2004</bcf:citekey>
-    <bcf:citekey order="20">Geerlings2013</bcf:citekey>
-    <bcf:citekey order="21">Bianchetti2009</bcf:citekey>
-    <bcf:citekey order="22">Reference1</bcf:citekey>
-    <bcf:citekey order="23">Reference2</bcf:citekey>
-    <bcf:citekey order="23">Reference1</bcf:citekey>
-    <bcf:citekey order="24">Reference3</bcf:citekey>
+    <bcf:citekey order="18">Johansson2012</bcf:citekey>
+    <bcf:citekey order="19">Johansson2012</bcf:citekey>
+    <bcf:citekey order="20">Johansson2012</bcf:citekey>
+    <bcf:citekey order="21">Johansson2012</bcf:citekey>
+    <bcf:citekey order="22">Bishop2010</bcf:citekey>
+    <bcf:citekey order="23">Boissonneault2010</bcf:citekey>
+    <bcf:citekey order="24">Schuster2007</bcf:citekey>
+    <bcf:citekey order="25">Blais2004</bcf:citekey>
+    <bcf:citekey order="26">Geerlings2013</bcf:citekey>
+    <bcf:citekey order="27">Paik2011</bcf:citekey>
+    <bcf:citekey order="28">Reed2010</bcf:citekey>
+    <bcf:citekey order="29">Reed2010</bcf:citekey>
+    <bcf:citekey order="30">Bishop2010</bcf:citekey>
+    <bcf:citekey order="31">Boissonneault2010</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

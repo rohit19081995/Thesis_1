@@ -389,15 +389,25 @@ The equivalent circuit, shown in Fig.\ref{fig:external circuit} for this setup w
 
 \begin{figure}
 \centering
-\includegraphics[width=250px]{Figures/equivalent}
+\includegraphics[width=250px]{Figures/external.png}
 \decoRule
 \caption[External coupling circuit]{The equivalent circuit for the resonator is a parallel RLC circuit.The external losses are in the external inpedence Z of the meaasurement device. The energy in the resonator leaks to the external circuit at a rate $\kappa_e\propto 1/C_c$. The internal losses are due to the resistance R. The rate of instrinsic energy loss in the resonator is $\kappa_i = \kappa - \kappa_e$ where $\kappa$ is the FWHM of the $S_{11}$ response of the resonator.}
 \label{fig:external circuit}
 \end{figure}
 
-The $S_{11}$ response for this circuit is given by \cite{Aspelmeyer2014}
+The $S_{11}$ parameter is the ratio of the voltage detected to voltage sent into the cavity. It is a complex number with information about the amplitude and phase. It it measured by sending a known signal of a particular frequency with a set amplitude and phase, and detecting the amplitude and phase of the reflected signal after passing through the cavity at the same frequency. A VNA is used to sweep the frequency of the input signal and record the amplitude and phase of the signal returned at the same frequency. The circuit used to make measurements at $20mK$ is shown in Fig.\ref{fig:circuit with fridge}.
+
+\begin{figure}
+\centering
+\includegraphics[width=350px]{Figures/circuit.png}
+\decoRule
+\caption[External Circuit]{The measurement setup for $20mK$ measurements. The input signal is sent from port 1 of the VNA. There are attenuators of appropriate values in between the plates. At the base plate, the input goes into a directional coupler which adds another 20dB attenuation. The output from the cavity is directed towards a HEMT amplifier which is connected to port 2 of the VNA.}
+\label{fig:circuit with fridge}
+\end{figure}
+
+The $S_{11}$ response for this circuit which is given by \cite{Aspelmeyer2014}
 \begin{equation}
-S_{11}(\omega) = 1-\frac{\kappa_e}{\kappa/2-j(\omega-\omega_0)}
+S_{11}(\omega) = 1-\frac{\kappa_e}{\kappa/2+j(\omega-\omega_0)}
 \end{equation}
 where\\
 $\omega_0$ is the resonant frequency of the cavity,\\
@@ -418,10 +428,36 @@ This factor is multiplied to the original expression for $S_{11}$ in \ref{eqn:S1
 \end{itemize}
 So the final function used to fit the data and get the parameters $\omega_0$,$\kappa$ and $\kappa$ is
 \begin{equation}
-S_{11}(\omega) = \alpha e^{j\phi}+(1-\alpha)\left(1-\frac{\kappa_e}{\kappa/2-j(\omega-\omega_0)}\right)e^{2j\omega l/v_p}
+S_{11}(\omega) = \alpha e^{j\phi}+(1-\alpha)\left(1-\frac{\kappa_e}{\kappa/2+j(\omega-\omega_0)}\right)e^{2j\omega l/v_p}
 \end{equation}
 
+The $S_{11}$ measurement was performed for different pin lengths inserted into the cavity at room temperature. The quality factors obtained from this measurement is shown in Fig.\ref{fig:diff lengths}.
 
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/diff_lengths.png}
+\decoRule
+\caption[Quality Factors for different pin lengths]{Quality factors for different pin lengths. $Q_i$ is the internal Quality, $Q_c$ is the external Quality, and $Q_t$ is the total Quality. The coupling Quality Factor $Q_c$ is increasing with decreasing pin lengths.}
+\label{fig:diff lengths}
+\end{figure}
+
+The same measurement is made by using a pin length of $4.5 mm$, but this time at a temperature of $20mK$. The internal quality factor is larger than the coupling quality factor at this temperature mainly because aluminium is superconducting below $1.1K$. Fig.\ref{fig:cold qualities} shows a plot of $Q_i$, $Q_c$ and $Q_t$ as a function of the average number of photons in the cavity. A sample plot of amplitude and phase data for a power of -35dBm is shown in Fig.\ref{fig:fit}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/s11fit.png}
+\decoRule
+\caption[Sample $S_{11}$ fit]{A sample of data and fit of $S_{11}$ at 20mK for a power of -35dBm. The red dots are the data from the VNA, and the blue line is the fit.}
+\label{fig:fit}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/cold_qualities.png}
+\decoRule
+\caption[Quality Factors for different powers at low temperature]{Quality factors for different powers at low temperature. $Q_i$ is the internal Quality, $Q_c$ is the external Quality, and $Q_t$ is the total Quality.}
+\label{fig:cold qualities}
+\end{figure}
 
 
 \iffalse
@@ -869,7 +905,13 @@ with no loss of generality where $\theta= 2\cos^{-1}|\alpha|$.
 
 This state can be represented on a sphere with spherical coordinated with $\rho = 1$. The $\ket{0}$,$\ket{1}$ and an arbitrary state is shown in the Bloch Sphere in Fig.\ref{fig:bloch rep}.
 
-%------------- BLOCH REPRESENTATION---------------------
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/bloch_rep.png}
+\decoRule
+\caption[Bloch Sphere Representation]{Representation of states on a Bloch Sphere. The blue arrow represents the ground state $\ket{g}$, the red arrow represents the excited state $\ket{e}$, and the green arrow represents an arbitrary state $\ket{\psi} = \cos(\theta/2)\ket{g}+e^{j\phi}\sin(\theta/2)\ket{e}$.\\This figure was generated using \cite{Johansson2012}.}
+\label{fig:bloch rep}
+\end{figure}
 
 \subsection{Dynamics of the Jaynes-Cummings system}
 
@@ -888,9 +930,29 @@ Applying the unitary operator $e^{i\hat{\mathcal{H}}t/\hbar}$ to an initial supe
 \end{split}
 \end{align}
 
-%----------BLOCH SPHERE REPRESENTATION--------------
+\begin{figure}
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Figures/rotatez.png}
+%\decoRule
+\caption{No Coupling}
+\label{fig:rotatez}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Figures/rotatex.png}
+%\decoRule
+\caption{On Resonance}
+\label{fig:rotatex}
+\end{subfigure}
+\decoRule
+\caption[Qubit Evolution on Bloch Sphere]{Evolution of an arbitrary state on the Bloch sphere. The light blue arrow represents the initial state and the dark blue arrow represents the final state. This figure was generated using \cite{Johansson2012}.}
+\label{fig:rotatexz}
+\end{figure}
 
-We can see that if the qubit starts in an eigenstate, it remains in the same state (only a phase factor is added), but if it starts in a superposition, it's phase oscillates as a function of time with a frequency equal to the qubit frequency. On the bloch sphere this can be represented as a precession about the $z$-axis.
+We can see that if the qubit starts in an eigenstate, it remains in the same state (only a phase factor is added), but if it starts in a superposition, it's phase oscillates as a function of time with a frequency equal to the qubit frequency. On the bloch sphere this can be represented as a precession about the $z$-axis as shown in Fig.\ref{fig:rotatez}.
 
 We can consider the dynamics of the coupled system in a similar way, once we change the basis to the new energy eigenstates in \ref{eqn:coupled eigenstates}.
 
@@ -903,22 +965,26 @@ If the drive signal or photons are at the same frequency as the qubit, then $\De
 \ket{n,-} &= -\frac{1}{\sqrt{2}}\ket{e}\ket{n}+\frac{1}{\sqrt{2}}\ket{g}\ket{n+1}
 \end{align}
 \end{subequations}
-With the new eigenstates, the qubit will oscillate about the $x$-axis. This means that if the initial state of the qubit is $\ket{g}$, it will oscillate to $\ket{e}$ in time $t=\pi g\sqrt{n+1}$. The excitation number of the cavity will also oscillate from $\ket{n+1}$ to $\ket{n}$ with the same frequency.
-
-%----------BLOCH SPHERE REPRESENTATION--------------
+With the new eigenstates, the qubit will oscillate about the $x$-axis as shown in Fig.\ref{fig:rotatex}. This means that if the initial state of the qubit is $\ket{g}$, it will oscillate to $\ket{e}$ in time $t=\pi g\sqrt{n+1}$. The excitation number of the cavity will also oscillate from $\ket{n+1}$ to $\ket{n}$ with the same frequency.
 
 It is worth noting that if the resonant frequency of the cavity is far from that of the qubit, and if the drive signal is of qubit frequency, then the qubit will still oscillate because it takes finite time for the photons to decay in the cavity.
 
-\item \textbf{Dispersive limit} ($\Delta\gg g$)\\
-In the dispersive limit, we can rewrite the Hamiltonian by considering $g/\Delta$ as a perturbation \cite{Schuster2007} to get
+\item \textbf{Low Power Dispersive limit} ($\Delta\gg g$)\\
+In the low power dispersive limit\footnote{For the high power limit see \cite{Bishop2010}. The specific case of the transmon in the high power limit is discussed in \cite{Boissonneault2010}.}, the number of photons in the cavity is low ($\approx$ 1-100). We can rewrite the Hamiltonian by considering $g/\Delta$ as a perturbation since $\Delta\gg g$ \cite{Schuster2007} to get
 \begin{equation}
 \hat{\mathcal{H}}=\hbar\left(\omega_r+\frac{g^2}{\Delta}\sigma_z\right)a^\dag a+\frac{\hbar}{2}\left(\omega_q+\frac{g^2}{\Delta}\right)\sigma_z
 \label{eqn:dispersive hamiltonian}
 \end{equation}
 
-%---------FIG OF DISPERSIVE SHIFT-----------------
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/dispersive_shift.png}
+\decoRule
+\caption[Dispersive Shift]{Amplitude and Phase of $S_{11}$ for bare resonator (thick black dashed lines), resonator with qubit in ground state (thick blue line), and resonator with qubit in excited state (thick red line). The dispersive shift is $2g^2/\Delta$.}
+\label{fig:dispersive shift}
+\end{figure}
 
-We can see from this Hamiltonian that dispersive coupling causes a shift of $\pm g^2/\Delta$ in the resonance frequency of the cavity depending on the qubit state. We can see the different S parameter responses for the ground and excited states of the qubit in Fig.\ref{fig:dispersive shift}. This shift is crucial to measuring the state of the qubit.
+We can see from this Hamiltonian that dispersive coupling causes a shift of $\pm g^2/\Delta$ in the resonance frequency of the cavity depending on the qubit state. We can see the different $S_{11}$ parameter responses for the ground and excited states of the qubit in Fig.\ref{fig:dispersive shift}. This shift is crucial to measuring the state of the qubit.
 We can also rearrange the equation as follows
 \begin{equation}
 \hat{\mathcal{H}}=\hbar\omega_r a^\dag a+\frac{\hbar}{2}\left(\omega_q+\frac{g^2}{\Delta}a^\dag a+\frac{g^2}{\Delta}\right)\sigma_z
@@ -978,4 +1044,40 @@ Dephasing is the process by which the qubit loses its phase information due to f
 
 \subsection{Measurement Theory}
 
-The data presented in this thesis uses a low power, dispersive measurement technique described in \cite{Bianchetti2009}.
+The setup for measurements is shown in Fig.\ref{fig:measurement setup}. A signal of frequency $\omega_p$ is generated from port 1 of the VNA. This signal will be referred to as the probe signal. Another signal of frequency $\omega_d$ is combined with the probe signal and is sent into the cavity. This second signal is the drive signal. The VNA records the signal at port 2.
+
+\begin{figure}
+\centering
+\includegraphics[width=400px]{Figures/measurement_circuit.png}
+\decoRule
+\caption[Measurement Setup]{Measurement Setup. The probe signal from the VNA and the drive signal from the signal generator is combined using a power combiner.}
+\label{fig:measurement setup}
+\end{figure}
+
+\subsubsection{Single tone measurement}
+
+In this measurement the drive signal is switched off and only the probe signal is sent to the cavity. We can plot the amplitude as a function of power and frequency of this signal. During this measurement, the qubit remains in the ground state except at high powers. This measurement was performed in \cite{Paik2011} with a 3D Transmon. The result of this measurement is similar to the ground state measurement in \cite{Reed2010}.
+
+If the qubit is excited with a pi pulse at every point (i.e. for each frequency and power) and the amplitude is recorded for a certain period of time ($\approx$ 400 ns) and averaged, we can see the response of both the ground state and excited states. This experiment was performed in \cite{Reed2010} with a 2D Transmon.
+
+\begin{itemize}
+\item \textbf{Low Power Measurement}
+
+The resonance occurs at the dispersively shifted frequency for low powers as expected.
+
+\item \textbf{High Power Measurement}
+
+At high powers, the resonance shifts toward the bare cavity frequency. This is described as a bright state of the cavity and is discussed in \cite{Bishop2010}. The specific case of the transmon is discussed in \cite{Boissonneault2010} where the transmon is treated as a Multi Level System.
+\end{itemize}
+
+
+\subsubsection{Two tone measurement}
+
+Both the probe signal and drive signal are applied continuously in this measurement. The probe frequency is close to the cavity frequency and is used to populate the cavity with photons. The drive frequency is close to the qubit frequency and is used to manipulate the qubit. Application of the drive frequency exactly at the qubit frequency will cause the qubit to leave the ground state. If this drive tone is applied continuously, the qubit will have an equal probability of being in the ground and excited state, so there will be no dispersive shift.
+
+Varying the frequencies and powers of the two signals can produce useful results.
+\begin{itemize}
+\item By probing the cavity with a fixed low power and a frequency equal to the cavity frequency, while varying the frequency of the drive signal at constant power, we can see a phase shift in the signal when the drive tone is at the qubit first transition frequency ($\omega_{01}$).
+\item For larger powers of the drive signal, the phase shift is larger. At sufficiently large powers, we can also see the qubit transition to the second excited level at $\omega_{12}$.
+\item If the drive signal is kept at a constant power and the probe power is increased, we can see the qubit frequency changing as a result of ac-Stark shift as the number of photons in the cavity increase.
+\end{itemize}
