@@ -1,25 +1,40 @@
 % Appendix A
 
-\chapter{Frequently Asked Questions} % Main appendix title
+\chapter{Calculation of Required Junction Resistance} % Main appendix title
 
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\section{How do I change the colors of links?}
+If the capacitive pads of the transmon have a $70$fF shunt capacitance ($C_s$)\footnote{The shunt capacitance $C_s$ is also the dominating capacitance for a junction with small area ($C_s\gg C_j$)} as in \cite{Paik2011}, then the charging energy is
+\begin{equation}
+\frac{E_C}{h} = \frac{e^2}{2C_\Sigma}= \frac{e^2}{2*\SI{70}{\femto \farad}} = \SI{0.277056}{\giga\hertz}
+\end{equation}
 
-The color of links can be changed to your liking using:
+To construct a $\SI{7}{\giga\hertz}$ qubit, $E_2-E_1 = \sqrt{8E_JE_C}-E_C = h\SI{7}{\giga\hertz}$. Then the Junctiion energy is
+\begin{equation}
+\frac{E_J}{h} = \frac{(h\times\SI{7}{\giga\hertz}+E_C)^2}{8E_C} = \SI{23.89}{\giga\hertz}
+\end{equation}
 
-{\small\verb!\hypersetup{urlcolor=red}!}, or
+The critical current for a given $E_J$ can be calculated using \ref{eqn:junction energy}.
+\begin{equation}
+I_0 = \frac{2eE_J}{\hbar} = \SI{46.2442}{\nano\ampere}
+\end{equation}
 
-{\small\verb!\hypersetup{citecolor=green}!}, or
+The Juntion Resistance ($R_N$) can be calculated using the Ambegaokar-Baratoff formula
+\begin{equation}
+I_0 = \frac{\pi\Delta_s}{2eR_N}\tanh\frac{\Delta_s}{2k_BT}
+\end{equation}
+where $k_B$ is the Boltzmann Constant and $\Delta_s$ is the superconducting gap, which in this case is that of aluminium. This can be calculated using BCS theory as
+\begin{equation}
+\Delta_s = 1.764\times k_BT_C
+\end{equation}
+where $T_C = \SI{1.1}{K}$ si the critical temperature of aluminium.
 
-{\small\verb!\hypersetup{allcolor=blue}!}.
+In the zero temperature limit, the junction resistance $R_N$ is given by
+\begin{equation}
+R_N = \frac{\pi\Delta_s}{2eI_0} = \SI{5.68188}{\kilo\ohm}
+\end{equation}
 
-\noindent If you want to completely hide the links, you can use:
-
-{\small\verb!\hypersetup{allcolors=.}!}, or even better: 
-
-{\small\verb!\hypersetup{hidelinks}!}.
-
-\noindent If you want to have obvious links in the PDF but not the printed text, use:
-
-{\small\verb!\hypersetup{colorlinks=false}!}.
+The junction inductance can also be calculated as
+\begin{equation}
+L_J = \frac{\Phi_0}{I_0} = \frac{\hbar}{2eI_0} = \SI{7.09833}{\nano\henry}
+\end{equation}

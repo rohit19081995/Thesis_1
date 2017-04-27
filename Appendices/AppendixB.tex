@@ -1,0 +1,23 @@
+% Appendix Template
+
+\chapter{Time Domain Measurements} % Main appendix title
+
+\label{AppendixB} % Change X to a consecutive letter; for referencing this appendix elsewhere, use \ref{AppendixX}
+
+The time domain measurements involve recording the reflected probe signal of the probe signal which is used to populate the cavity with photons.\\The drive signal or control signal of frequency equal to the qubit frequency will be sent in pulses in order to manipulate the qubit.\\The Measurement tone is sent and it's quadrature components are recorded continuously as a function of time. The method of measurement is well described and demonstrated in \cite{Bianchetti2009}.
+
+\begin{itemize}
+\item \textbf{Cavity Decay Time}
+
+This measurement involves sending a microwave pulse to populate the cavity with photons, and then measure the cavity response as a function of time. This is a ring down measurement since it involves the cavity losing photons and coming down to the zero-photon\footnote{This refers to the experiment done at milli-Kelvin temperatures. Ring down measurement can also be done at higher temperatures, where the photon number comes down to thermal equilibrium} state. The cavity response shows an exponential decay, and the time taken for the response to reduce by a factor of $1/e$ is the cavity decay time $1/\kappa$.
+
+\item \textbf{Rabi Measurement}
+
+This measurement is used to calibrate the length of a pi-pulse. The qubit is initialized in ground state\footnote{This is done by waiting long enough so the qubit relaxes to ground state.}. A pulse of length $\Delta\tau$ and frequency $\omega_q$ is sent to the cavity and then the cavity response is measured (ring-down for example)\footnote{A continuous measurement scheme is described in \cite{Bianchetti2009}}. This measurement is repeated multiple times and the average is taken. The area between the measured curve (IQ values) for an arbitrary state and the ground state is proportional to the excitation probability of the qubit.
+
+Plotting the excitation probabilities as a function of $\Delta\tau$ shows an oscillating behaviour. The pulse time for a pi pulse, which is $\Delta\tau$ for which the first peak in excitation probability is observed, is calibrated using this measurement.
+
+\item \textbf{Relaxation Time}
+
+The experiment for finding the relaxation time $T_1$ for the qubit involves first exciting the qubit using a pi pulse, and measuring the cavity response after waiting for a time $\Delta t$. Plotting the excited state probability vs $\Delta t$ shows an exponential decay. The time $\Delta t$ at which the excitation probability drops to $1/e$ of the initial probability is the relaxation time $T_1$.
+\end{itemize}

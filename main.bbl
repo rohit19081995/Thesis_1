@@ -56,6 +56,73 @@
       \field{pages}{1391}
       \range{pages}{1}
     \endentry
+    \entry{Bianchetti2009}{article}{}
+      \name{author}{9}{}{%
+        {{hash=7cc91570113baf5d24a6e3201e918367}{%
+           family={Bianchetti},
+           familyi={B\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a7f3a78704fe60c4102bee68acb7ce72}{%
+           family={Filipp},
+           familyi={F\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d06dca373ac06d22ea0c49f28b22fac2}{%
+           family={Baur},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5dc3226cd4b486147cf429d98ba69344}{%
+           family={Fink},
+           familyi={F\bibinitperiod},
+           given={JM},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8e53972b5ef8a9182839299e0c9bd01c}{%
+           family={Göppl},
+           familyi={G\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=762335f211fd3d49429e63e4abcb0ed5}{%
+           family={Leek},
+           familyi={L\bibinitperiod},
+           given={PJ},
+           giveni={P\bibinitperiod}}}%
+        {{hash=270cc5c94f30ed61a50c7afc8161c13c}{%
+           family={Steffen},
+           familyi={S\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fbf1987305b8b3d1b5803d818c5785fd}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d18539c4a1208fd536ec9f5755b3ce32}{%
+           family={Wallraff},
+           familyi={W\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{52ae51cf4c3efded263e24630dfe7606}
+      \strng{fullhash}{df112ffc7affbf9fdb7080aa2d7c8e10}
+      \strng{authornamehash}{52ae51cf4c3efded263e24630dfe7606}
+      \strng{authorfullhash}{df112ffc7affbf9fdb7080aa2d7c8e10}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{4}
+      \field{title}{Dynamics of dispersive single-qubit readout in circuit quantum electrodynamics}
+      \field{volume}{80}
+      \field{year}{2009}
+      \field{pages}{043840}
+      \range{pages}{1}
+    \endentry
     \entry{Bishop2010}{article}{}
       \name{author}{3}{}{%
         {{hash=305bffb2374b23735ea3a04cac462f73}{%
@@ -635,6 +702,80 @@
       \field{labeltitlesource}{title}
       \field{title}{Circuit quantum electrodynamics}
       \field{year}{2007}
+    \endentry
+    \entry{Schuster2007a}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=1b246593ea40b6b422f3ff1528220b57}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={DI},
+           giveni={D\bibinitperiod}}}%
+        {{hash=09e23d974c34c287b2d42c393086b79b}{%
+           family={Houck},
+           familyi={H\bibinitperiod},
+           given={AA},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4f7e44f8126314d2515fb52a9f2a7222}{%
+           family={Schreier},
+           familyi={S\bibinitperiod},
+           given={JA},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d18539c4a1208fd536ec9f5755b3ce32}{%
+           family={Wallraff},
+           familyi={W\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=30758adf5b3ca5c5fcf4456de9c3449e}{%
+           family={Gambetta},
+           familyi={G\bibinitperiod},
+           given={JM},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fbf1987305b8b3d1b5803d818c5785fd}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a8867a4ca5f2d405dae9f54225bc88cd}{%
+           family={Frunzio},
+           familyi={F\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=27536e493b0873584921876c816317cc}{%
+           family={Majer},
+           familyi={M\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b25b51b95a7d8f03a1ae99d393caef2b}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0d9f84b792e96adb5dfcaa8565fc5c67}{%
+           family={Devoret},
+           familyi={D\bibinitperiod},
+           given={MH},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b6385241d4d0d08ebe16bf076a79b077}
+      \strng{fullhash}{3fdb0298dfd0d00ba228edcc865f1d32}
+      \strng{authornamehash}{b6385241d4d0d08ebe16bf076a79b077}
+      \strng{authorfullhash}{3fdb0298dfd0d00ba228edcc865f1d32}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{7127}
+      \field{title}{Resolving photon number states in a superconducting circuit}
+      \field{volume}{445}
+      \field{year}{2007}
+      \field{pages}{515\bibrangedash 518}
+      \range{pages}{4}
     \endentry
   \endsortlist
 \endrefsection

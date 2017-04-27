@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.12.29)  6 APR 2017 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.12.29)  27 APR 2017 11:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -2654,7 +2654,8 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (main.aux
-(Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Appendices/AppendixA.aux))
+(Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Appendices/AppendixA.aux)
+(Appendices/AppendixB.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -3109,7 +3110,7 @@ Package pdftex.def Info: Figures/SISJJ.png used on input line 660.
 <Figures/CPB.pdf, id=537, 124.96687pt x 125.75984pt>
 File: Figures/CPB.pdf Graphic file (type pdf)
  <use Figures/CPB.pdf>
-Package pdftex.def Info: Figures/CPB.pdf used on input line 722.
+Package pdftex.def Info: Figures/CPB.pdf used on input line 723.
 (pdftex.def)             Requested size: 124.96657pt x 125.75952pt.
 
 [23 <./Figures/CPB.pdf>]
@@ -3117,10 +3118,10 @@ Package pdftex.def Info: Figures/CPB.pdf used on input line 722.
 File: Figures/EjEc=0.png Graphic file (type png)
 
 <use Figures/EjEc=0.png>
-Package pdftex.def Info: Figures/EjEc=0.png used on input line 741.
+Package pdftex.def Info: Figures/EjEc=0.png used on input line 742.
 (pdftex.def)             Requested size: 300.0pt x 252.28316pt.
  [24 <./Figures/EjEc=0.png>] [25]
-Overfull \hbox (3.48062pt too wide) in paragraph at lines 819--820
+Overfull \hbox (3.48062pt too wide) in paragraph at lines 820--821
 \T1/ppl/m/n/10.95 A Trans-mon is ba-si-cally a Cooper Pair Box in which the Jos
 eph-son Junc-tion is shunted
  []
@@ -3129,10 +3130,10 @@ eph-son Junc-tion is shunted
 File: Figures/EjEcall.png Graphic file (type png)
 
 <use Figures/EjEcall.png>
-Package pdftex.def Info: Figures/EjEcall.png used on input line 825.
+Package pdftex.def Info: Figures/EjEcall.png used on input line 826.
 (pdftex.def)             Requested size: 404.02908pt x 330.45276pt.
  [26]
-Overfull \hbox (13.02438pt too wide) in paragraph at lines 833--834
+Overfull \hbox (13.02438pt too wide) in paragraph at lines 834--835
 []\T1/ppl/m/n/10.95 The Hamil-to-nian can also be solved us-ing per-tur-ba-tion
  the-ory in the limit $\OML/cmm/m/it/10.95 E[]=E[] \OMS/cmsy/m/n/10.95 
  []
@@ -3140,51 +3141,51 @@ Overfull \hbox (13.02438pt too wide) in paragraph at lines 833--834
 [27 <./Figures/EjEcall.png>]
 
 LaTeX Warning: Reference `fig:transmon with cavity' on page 28 undefined on inp
-ut line 851.
+ut line 852.
 
 [28] <Figures/bloch_rep.png, id=629, 505.89pt x 505.89pt>
 File: Figures/bloch_rep.png Graphic file (type png)
 
 <use Figures/bloch_rep.png>
-Package pdftex.def Info: Figures/bloch_rep.png used on input line 910.
+Package pdftex.def Info: Figures/bloch_rep.png used on input line 911.
 (pdftex.def)             Requested size: 404.02908pt x 404.03323pt.
  [29] [30 <./Figures/bloch_rep.png>]
 <Figures/rotatez.png, id=650, 505.89pt x 505.89pt>
 File: Figures/rotatez.png Graphic file (type png)
  <use Figures/rotatez.png>
-Package pdftex.def Info: Figures/rotatez.png used on input line 937.
+Package pdftex.def Info: Figures/rotatez.png used on input line 938.
 (pdftex.def)             Requested size: 181.81184pt x 181.81148pt.
 
 <Figures/rotatex.png, id=651, 505.89pt x 505.89pt>
 File: Figures/rotatex.png Graphic file (type png)
  <use Figures/rotatex.png>
-Package pdftex.def Info: Figures/rotatex.png used on input line 945.
+Package pdftex.def Info: Figures/rotatex.png used on input line 946.
 (pdftex.def)             Requested size: 181.81184pt x 181.81148pt.
 
 [31 <./Figures/rotatez.png> <./Figures/rotatex.png>]
-<Figures/dispersive_shift.png, id=669, 722.7pt x 867.24pt>
+<Figures/dispersive_shift.png, id=670, 722.7pt x 867.24pt>
 File: Figures/dispersive_shift.png Graphic file (type png)
 
 <use Figures/dispersive_shift.png>
-Package pdftex.def Info: Figures/dispersive_shift.png used on input line 981.
+Package pdftex.def Info: Figures/dispersive_shift.png used on input line 982.
 (pdftex.def)             Requested size: 404.02908pt x 484.83066pt.
  [32] [33 <./Figures/dispersive_shift.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1007
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1008
 
  []
 
 [34]
-Overfull \hbox (0.9189pt too wide) in paragraph at lines 1032--1033
+Overfull \hbox (0.9189pt too wide) in paragraph at lines 1033--1034
 []\T1/ppl/m/n/10.95 At low pow-ers, dis-per-sive mea-sure-ment is QND or Quan-t
 um Non-Demolition,
  []
 
-[35] <Figures/measurement_circuit.png, id=710, 455.301pt x 481.3182pt>
+[35] <Figures/measurement_circuit.png, id=712, 455.301pt x 481.3182pt>
 File: Figures/measurement_circuit.png Graphic file (type png)
 
 <use Figures/measurement_circuit.png>
 Package pdftex.def Info: Figures/measurement_circuit.png used on input line 105
-1.
+2.
 (pdftex.def)             Requested size: 401.50146pt x 424.45734pt.
  [36 <./Figures/measurement_circuit.png>]
 [37]) [38]
@@ -3192,23 +3193,35 @@ Package pdftex.def Info: Figures/measurement_circuit.png used on input line 105
 
  (Appendices/AppendixA.tex
 Appendix A.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-))
 1: section
 [39
 
 
 
-]
+]) [40]
+\openout2 = `Appendices/AppendixB.aux'.
+
+ (Appendices/AppendixB.tex
+Appendix B.
+1: section
+[41
+
+
+
+]) [42]
+Overfull \hbox (1.70004pt too wide) in paragraph at lines 239--239
+[]\T1/ppl/m/n/10.95 R Bianchetti et al.   Dy-nam-ics of dis-per-sive single-qu
+bit read-out in cir-cuit quan-
+ []
+
+
 Overfull \hbox (3.0463pt too wide) in paragraph at lines 239--239
 []\T1/ppl/m/n/10.95 Kurtis Lee Geer-lings. \T1/ppl/m/it/10.95 Im-prov-ing co-he
 r-ence of su-per-con-duct-ing qubits and res-onators\T1/ppl/m/n/10.95 .
  []
 
 1: section
-[40
+[43
 
 
 ]
@@ -3218,14 +3231,14 @@ Overfull \hbox (1.24043pt too wide) in paragraph at lines 239--239
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
-[41]
+[44]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
-(Appendices/AppendixA.aux))
+(Appendices/AppendixA.aux) (Appendices/AppendixB.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B4082F9B4386BA25D96CAE3EEDE76804;4572.
+(rerunfilecheck)             Checksum: EEC1D746855EEC53055D509784765CAA;4684.
 
 
 LaTeX Warning: There were undefined references.
@@ -3236,12 +3249,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  34474 strings out of 493333
- 682186 string characters out of 3139193
- 1083542 words of memory out of 3000000
- 37326 multiletter control sequences out of 15000+200000
- 58485 words of font info for 112 fonts, out of 3000000 for 9000
+ 682387 string characters out of 3139193
+ 1086130 words of memory out of 3000000
+ 37307 multiletter control sequences out of 15000+200000
+ 57864 words of font info for 110 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,20n,84p,10379b,2284s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,21n,84p,10379b,2305s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -3262,14 +3275,13 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
-latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (52 pages, 1602720 bytes).
+ts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
+alatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (55 pages, 1610483 bytes).
 PDF statistics:
- 885 PDF objects out of 1000 (max. 8388607)
- 286 named destinations out of 1000 (max. 500000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 303 named destinations out of 1000 (max. 500000)
  304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

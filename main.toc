@@ -20,10 +20,10 @@
 \contentsline {subsection}{\numberline {1.2.6}Coupling the Transmon to a Resonator}{28}{subsection.177}
 \contentsline {subsection}{\numberline {1.2.7}The Bloch Sphere}{29}{subsection.187}
 \contentsline {subsection}{\numberline {1.2.8}Dynamics of the Jaynes-Cummings system}{29}{subsection.191}
-\contentsline {subsection}{\numberline {1.2.9}Decoherence}{35}{subsection.209}
-\contentsline {subsection}{\numberline {1.2.10}Measurement Theory}{36}{subsection.210}
-\contentsline {subsubsection}{Single tone measurement}{37}{subsubsection*.212}
-\contentsline {subsubsection}{Two tone measurement}{37}{subsubsection*.213}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{39}{appendix.214}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{39}{section.215}
-\contentsline {chapter}{Bibliography}{40}{appendix*.216}
+\contentsline {subsection}{\numberline {1.2.9}Decoherence}{35}{subsection.210}
+\contentsline {subsection}{\numberline {1.2.10}Measurement Theory (Dispersive Limit)}{36}{subsection.211}
+\contentsline {subsubsection}{Single tone measurement}{37}{subsubsection*.213}
+\contentsline {subsubsection}{Two tone measurement}{37}{subsubsection*.214}
+\contentsline {chapter}{\numberline {A}Calculation of Required Junction Resistance}{39}{appendix.215}
+\contentsline {chapter}{\numberline {B}Time Domain Measurements}{41}{appendix.224}
+\contentsline {chapter}{Bibliography}{43}{appendix*.228}

@@ -134,15 +134,14 @@
 }
 
 @Article{Reed2010,
-  author        = {Reed, MD and DiCarlo, L and Johnson, BR and Sun, L and Schuster, DI and Frunzio, L and Schoelkopf, RJ},
-  title         = {High-fidelity readout in circuit quantum electrodynamics using the Jaynes-Cummings nonlinearity},
-  journal       = {Physical review letters},
-  year          = {2010},
-  volume        = {105},
-  number        = {17},
-  pages         = {173601},
-  __markedentry = {[Wayne:]},
-  publisher     = {APS},
+  author    = {Reed, MD and DiCarlo, L and Johnson, BR and Sun, L and Schuster, DI and Frunzio, L and Schoelkopf, RJ},
+  title     = {High-fidelity readout in circuit quantum electrodynamics using the Jaynes-Cummings nonlinearity},
+  journal   = {Physical review letters},
+  year      = {2010},
+  volume    = {105},
+  number    = {17},
+  pages     = {173601},
+  publisher = {APS},
 }
 
 @Article{Bishop2010,
@@ -153,6 +152,18 @@
   volume        = {105},
   number        = {10},
   pages         = {100505},
+  __markedentry = {[Wayne:]},
+  publisher     = {APS},
+}
+
+@Article{Boissonneault2010,
+  author        = {Boissonneault, Maxime and Gambetta, JM and Blais, Alexandre},
+  title         = {Improved superconducting qubit readout by qubit-induced nonlinearities},
+  journal       = {Physical review letters},
+  year          = {2010},
+  volume        = {105},
+  number        = {10},
+  pages         = {100504},
   __markedentry = {[Wayne:6]},
   publisher     = {APS},
 }

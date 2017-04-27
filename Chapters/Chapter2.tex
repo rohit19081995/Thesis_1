@@ -701,6 +701,7 @@ U(I,\delta)&=-E_J\cos\delta-\left(\frac{\hbar}{2e}\right)I\delta&&\text{potentia
 where $E_J$, the Josephson Energy is given by
 \begin{equation}
 E_J=\frac{\hbar}{2e}I_0=\frac{\Phi_0}{2\pi}I_0
+\label{eqn:junction energy}
 \end{equation}
 The current $I$ is usually so small that we can ignore that term making the potential energy
 \begin{equation}
@@ -965,7 +966,7 @@ If the drive signal or photons are at the same frequency as the qubit, then $\De
 \ket{n,-} &= -\frac{1}{\sqrt{2}}\ket{e}\ket{n}+\frac{1}{\sqrt{2}}\ket{g}\ket{n+1}
 \end{align}
 \end{subequations}
-With the new eigenstates, the qubit will oscillate about the $x$-axis as shown in Fig.\ref{fig:rotatex}. This means that if the initial state of the qubit is $\ket{g}$, it will oscillate to $\ket{e}$ in time $t=\pi g\sqrt{n+1}$. The excitation number of the cavity will also oscillate from $\ket{n+1}$ to $\ket{n}$ with the same frequency.
+With the new eigenstates, the qubit will oscillate about the $x$-axis as shown in Fig.\ref{fig:rotatex}. This means that if the initial state of the qubit is $\ket{g}$, it will oscillate to $\ket{e}$ in time $t=\pi g\sqrt{n+1}$. A pulsed signal which causes this transition\footnote{This signal refers to any signal which is resonant with the qubit and causes a rotation of $\pi$ radians about the $x$-axis on the Bloch Sphere.} is called a pi-pulse The excitation number of the cavity will also oscillate from $\ket{n+1}$ to $\ket{n}$ with the same frequency.
 
 It is worth noting that if the resonant frequency of the cavity is far from that of the qubit, and if the drive signal is of qubit frequency, then the qubit will still oscillate because it takes finite time for the photons to decay in the cavity.
 
@@ -1042,9 +1043,9 @@ The decay of the qubit to the ground state $\ket{g}$ due to spontaneous emission
 Dephasing is the process by which the qubit loses its phase information due to fluctuations is qubit frequency. These fluctuations cause the qubit to gain or lose phase and on average, lead to a diffused phase.
 \end{itemize}
 
-\subsection{Measurement Theory}
+\subsection{Measurement Theory (Dispersive Limit)}
 
-The setup for measurements is shown in Fig.\ref{fig:measurement setup}. A signal of frequency $\omega_p$ is generated from port 1 of the VNA. This signal will be referred to as the probe signal. Another signal of frequency $\omega_d$ is combined with the probe signal and is sent into the cavity. This second signal is the drive signal. The VNA records the signal at port 2.
+The setup for measurements is shown in Fig.\ref{fig:measurement setup}. All measurements described here assume that the cavity is dispersively coupled with the qubit. A signal of frequency $\omega_p$ is generated from port 1 of the VNA. This signal will be referred to as the probe signal. Another signal of frequency $\omega_d$ is combined with the probe signal and is sent into the cavity. This second signal is the drive signal. The VNA records the signal at port 2.
 
 \begin{figure}
 \centering
@@ -1077,7 +1078,9 @@ Both the probe signal and drive signal are applied continuously in this measurem
 
 Varying the frequencies and powers of the two signals can produce useful results.
 \begin{itemize}
-\item By probing the cavity with a fixed low power and a frequency equal to the cavity frequency, while varying the frequency of the drive signal at constant power, we can see a phase shift in the signal when the drive tone is at the qubit first transition frequency ($\omega_{01}$).
-\item For larger powers of the drive signal, the phase shift is larger. At sufficiently large powers, we can also see the qubit transition to the second excited level at $\omega_{12}$.
-\item If the drive signal is kept at a constant power and the probe power is increased, we can see the qubit frequency changing as a result of ac-Stark shift as the number of photons in the cavity increase.
+\item By probing the cavity with a fixed low power and a frequency equal to the cavity frequency, while varying the frequency of the drive signal at constant power, we can see a phase shift in the signal when the drive tone is at the qubit first transition frequency ($\omega_{01}$). For larger powers of the drive signal, the phase shift is larger. At sufficiently large powers, we can also see the qubit transition to the second excited level at $\omega_{12}$.
+\item If the drive signal is swept at a constant power and the probe power is increased, we can see the qubit frequency changing as a result of ac-Stark shift as the number of photons in the cavity increase.
+\item If the probe frequency is fixed close to the dispersively shifted resonance corresponding to one of the qubit states with a strong coupling rate and parameters such that $2\chi>\gamma,\kappa$, then spectroscopy with the drive frequency reveals the photon number state distribution in the cavity with different peaks corresponding to each photon number state. This is due to ac-Stark shift and is demonstrated using a \CPB in \cite{Schuster2007a}.
 \end{itemize}
+
+Details about Time Domain Measurements can be found in \ref{AppendixB}
