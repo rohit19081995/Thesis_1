@@ -328,6 +328,53 @@
       \field{title}{The feynman lectures on physics, vol. 3: Quantum mechanics}
       \field{year}{1966}
     \endentry
+    \entry{Gao2007}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f6a53c9969577587f5acdc92df740bf4}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Jiansong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e952cdd64c504471db03b03b1f1dc01a}{%
+           family={Zmuidzinas},
+           familyi={Z\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=afde273cf60560f5f63dc6cada66239b}{%
+           family={Mazin},
+           familyi={M\bibinitperiod},
+           given={Benjamin\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a524a6cdd0ad4e81682529202a1d24fd}{%
+           family={LeDuc},
+           familyi={L\bibinitperiod},
+           given={Henry\bibnamedelima G},
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=f83d5779eea96d787f84bd59fcc05a5b}{%
+           family={Day},
+           familyi={D\bibinitperiod},
+           given={Peter\bibnamedelima K},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{a9e37aac89a147d47c03493331bd5dd8}
+      \strng{fullhash}{602cc598988e6a9a19d58a27f8b0fd35}
+      \strng{authornamehash}{a9e37aac89a147d47c03493331bd5dd8}
+      \strng{authorfullhash}{602cc598988e6a9a19d58a27f8b0fd35}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Physics Letters}
+      \field{number}{10}
+      \field{title}{Noise properties of superconducting coplanar waveguide microwave resonators}
+      \field{volume}{90}
+      \field{year}{2007}
+      \field{pages}{102507}
+      \range{pages}{1}
+    \endentry
     \entry{Geerlings2013}{book}{}
       \name{author}{1}{}{%
         {{hash=0e7e41eadef44a6736f3a3f8dd3967cd}{%

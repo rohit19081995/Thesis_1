@@ -145,15 +145,14 @@
 }
 
 @Article{Bishop2010,
-  author        = {Bishop, Lev S and Ginossar, Eran and Girvin, SM},
-  title         = {Response of the strongly driven Jaynes-Cummings oscillator},
-  journal       = {Physical review letters},
-  year          = {2010},
-  volume        = {105},
-  number        = {10},
-  pages         = {100505},
-  __markedentry = {[Wayne:]},
-  publisher     = {APS},
+  author    = {Bishop, Lev S and Ginossar, Eran and Girvin, SM},
+  title     = {Response of the strongly driven Jaynes-Cummings oscillator},
+  journal   = {Physical review letters},
+  year      = {2010},
+  volume    = {105},
+  number    = {10},
+  pages     = {100505},
+  publisher = {APS},
 }
 
 @Article{Boissonneault2010,
@@ -164,8 +163,20 @@
   volume        = {105},
   number        = {10},
   pages         = {100504},
-  __markedentry = {[Wayne:6]},
+  __markedentry = {[Wayne:]},
   publisher     = {APS},
+}
+
+@Article{Schuster2007a,
+  author        = {Schuster, DI and Houck, AA and Schreier, JA and Wallraff, A and Gambetta, JM and Blais, A and Frunzio, L and Majer, J and Johnson, B and Devoret, MH and others},
+  title         = {Resolving photon number states in a superconducting circuit},
+  journal       = {Nature},
+  year          = {2007},
+  volume        = {445},
+  number        = {7127},
+  pages         = {515--518},
+  __markedentry = {[Wayne:6]},
+  publisher     = {Nature Publishing Group},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

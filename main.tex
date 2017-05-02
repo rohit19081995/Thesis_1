@@ -98,6 +98,9 @@ headsepline, % Uncomment to get a line under the header
 
 \pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
 
+\newcommand{\JJ}{Josephson Junction }
+\newcommand{\CPB}{Cooper Pair Box }
+
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -110,7 +113,7 @@ headsepline, % Uncomment to get a line under the header
 
 \textsc{\Large THESIS}\\[0.5cm] % Thesis type
 \large \textit{Submitted in partial fulfillment of the requirements of\\\textbf{BITS F421T, Thesis}}\\[0.3cm] % University requirement text
-\vspace*{.06\textheight}
+%\vspace*{.06\textheight}
 by\vspace{0.5cm}
 
 
@@ -131,8 +134,23 @@ ID No - 2013B5TS364G\\\vspace{1.5cm}
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+Superconducting Qubits are a promising candidate for quantum computing. The use of a high quality 3D superconducting cavity to interact with a \JJ qubit greatly increases it's coherence time. Shunting the \JJ with a large capacitance decreases charge noise exponentially while maintaining the necessary anharmonicity to access only 2 levels of the system. Microwave signals of appropriate frequency can be used to cause Rabi oscillations in the qubit and control it's quantum state. The $S_{11}$ response of the cavity reveals the state of the qubit when they are dispersively coupled. The coherence time and time scales that manipulate the qubit can be estimated using this response.
 \end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+I would like to thank the Academic Research Division in Birla Institute of Technology and Science, KK Birla Goa Campus for giving me this great opportunity.
+ 
+I would also like to thank my thesis advisor Dr. Vibhor Singh at the Indian Institute of Science, Bangalore. His guidance always helped me in writing this thesis. He consistently allowed this thesis to be my own work, but steered me in the right the direction whenever he thought I needed it.
+
+I thank my fellow labmates in the Quantum-NEMS Group: Sudhir Kumar Sahu, Sourav Majumder, Soumya Ranjan Das, Dr.Bindumalini Gunupudi and Soma Mishra for the stimulating discussions and the knowledge they shared with me.
+
+Last but not the least, I would like to thank my family, especially my parents for supporting me throughout this thesis and my life.
+\end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -205,15 +223,12 @@ $\omega$ & angular frequency & \si{\radian} \\
 
 \pagestyle{thesis} % Return the page headers back to the "thesis" style
 
-\newcommand{\JJ}{Josephson Junction }
-\newcommand{\CPB}{Cooper Pair Box }
-
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
 \include{Chapters/Chapter1}
 \include{Chapters/Chapter2} 
-%\include{Chapters/Chapter3}
+\include{Chapters/Chapter3}
 %\include{Chapters/Chapter4} 
 %\include{Chapters/Chapter5}
 %\include{Chapters/Chapter6} 
