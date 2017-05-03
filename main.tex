@@ -46,7 +46,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{caption}
 \usepackage{subcaption}
 \newcommand{\sectionbreak}{\clearpage}
-
+\usepackage{nameref}
 \usepackage{palatino} % Use the Palatino font by default
 
 \usepackage[backend=biber,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
@@ -72,7 +72,7 @@ headsepline, % Uncomment to get a line under the header
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Thesis Title} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\thesistitle{3D Superconducting Transmon Qubit} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
 \supervisor{\href{http://www.physics.iisc.ernet.in/~v.singh/}{\color{black}{Dr. Vibhor Singh\\ Assistant Professor, IISc Bangalore}}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{M.Sc. (Hons.) Physics} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
@@ -169,13 +169,15 @@ Last but not the least, I would like to thank my family, especially my parents f
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
 \textbf{AC} & \textbf{A}lternating \textbf{C}urrent\\
+\textbf{BCS} & \textbf{B}ardeen \textbf{C}ooper and \textbf{S}chrieffer \\
 \textbf{FWHM} & \textbf{F}ull \textbf{W}idth at \textbf{H}alf \textbf{M}aximum\\
-\textbf{TEM} & \textbf{T}ransverse \textbf{E}lectric and \textbf{M}agnetic\\
-\textbf{TE} & \textbf{T}ransverse \textbf{E}lectric\\
-\textbf{TM} & \textbf{T}ransverse \textbf{M}agnetic\\
+\textbf{HEMT} & \textbf{H}igh \textbf{E}lectron \textbf{M}obility \textbf{T}ransistor\\
+\textbf{QED} & \textbf{Q}uantum \textbf{E}lectro-\textbf{D}ynamics\\
 \textbf{QND} & \textbf{Q}uantum \textbf{N}on \textbf{D}emolition\\
 \textbf{SHO} & \textbf{S}imple \textbf{H}armonic \textbf{O}scillator\\
-\textbf{SIS} & \textbf{S}uperconductor-\textbf{I}nsulator-\textbf{S}uperconductor\\
+\textbf{SIS} & \textbf{S}uperconductor-\textbf{I}nsulator-\textbf{S}uperconductor\\\textbf{TE} & \textbf{T}ransverse \textbf{E}lectric\\
+\textbf{TEM} & \textbf{T}ransverse \textbf{E}lectric and \textbf{M}agnetic\\
+\textbf{TM} & \textbf{T}ransverse \textbf{M}agnetic\\
 \textbf{VNA} & \textbf{V}ector \textbf{N}etwork \textbf{A}nalyser\\
 
 \end{abbreviations}
@@ -189,6 +191,12 @@ Last but not the least, I would like to thank my family, especially my parents f
 % The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
 
 Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+Reduced Planks Constant & $\hbar$ & \SI{1.054571800e-34}{\joule\second} \\
+Planks Constant & $h$ & \SI{6.62607004e-34}{\joule\second} \\
+Elementary Charge & $e$ & \SI{1.60217662e-19}{\coulomb}\\
+Magnetic Flux Quantum & $\Phi_0$ & \SI{2.067833831e-15}{\weber} \\
+Boltzmann Constant & $k_B$ & \SI{1.38064852e-23}{\joule\per\kelvin} \\
+Pi & $\pi$ & \SI{3.14159265359}{} \\
 %Constant Name & $Symbol$ & $Constant Value$ with units\\
 
 \end{constants}
@@ -198,22 +206,97 @@ Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
 %----------------------------------------------------------------------------------------
 
 \begin{symbols}{lll} % Include a list of Symbols (a three column table)
-
-$a$ & distance & \si{\meter} \\
-$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
-%Symbol & Name & Unit \\
-
-\addlinespace % Gap to separate the Roman symbols from the Greek
-
-$\omega$ & angular frequency & \si{\radian} \\
-
+&\Large{\textbf{\nameref{Chapter2}}}\\
+ \\
+$C$ & Capacitance & \si{\farad}\\
+$\bar{E}$ & Electric Field & \si{\volt\per\meter} \\
+$\bar{H}$ & Magnetic Field & \si{\tesla} \\
+$k$ & Wave Number & \si{\per\meter}\\
+$L$ & Inductance & \si{\henry}\\
+$Q$ & Quality Factor & \si{}\\
+$Q_c$ & Coupling Quality Factor & \si{}\\
+$Q_i$ & Internal Quality Factor & \si{}\\
+$Q_t$ & Total (Loaded) Quality Factor & \si{}\\
+$R$ & Resistance & \si{\ohm}\\
+$S_{ij}$ & Scattering Parameter & \si{}\\
+$v_p$ & Phase Velocity & \si{\meter\per\second}\\
+$Z$ & Impedance & \si{\ohm}\\
+ \\
+$\alpha$ & Attenuation & \si{} \\
+$\beta$ & Propogation Constant & \si{} \\
+$\gamma$ & $\alpha+j\beta$ & \si{} \\
+$\epsilon$ & Electric Permittivity & \si{\farad\per\meter}\\
+$\epsilon_r$ & Relative Electric Permittivity & \si{}\\
+$\eta$ & Intrinsic Impedance & \si{\ohm}\\
+$\kappa$ & Cavity Decay Rate & \si{\hertz}\\
+$\kappa_e$ & External Cavity Coupling Rate & \si{\hertz}\\
+$\kappa_i$ & Internal Cavity Coupling Rate & \si{\hertz}\\
+$\mu$ & Magnetic Permeability & \si{\henry\per\meter}\\
+$\mu_r$ & Relative Magnetic Permeability & \si{}\\
+$\sigma$ & Electric Conductivity & \si{\siemens\per\ohm}\\
+$\omega$ & Angular Frequency & \si{\radian\per\second} \\
+$\omega_0$ & Resonance Frequency & \si{\radian\per\second} \\
+ \\
+&\Large{\textbf{\nameref{Chapter3}}}\\
+ \\
+$a$ & Annihilation,Amplitude Operator & \si{}\\
+$a^\dag$ & Creation Operator & \si{}\\
+$C$ & Capacitance & \si{\farad}\\
+$C_c$ & Coupling Capacitance & \si{\farad}\\
+$C_g$ & Gate Capacitance & \si{\farad}\\
+$C_j$ & Josephson Capacitance & \si{\farad}\\
+$C_s$ & Shunt Capacitance & \si{\farad}\\
+$E_C$ & Charging Energy & \si{\joule}\\
+$E_J$ & Josephson Energy & \si{\joule}\\
+$E_n$ & Energy of $n$th Energy Eigenstate & \si{\joule}\\
+$E_{kin}$ & Kinetic Energy & \si{\joule}\\
+$g$ & Qubit-Cavity Coupling Coefficient & si{}\\
+$\mathcal{H}$ & Hamiltonian & \si{\joule}\\
+$I$ & Bias Current & \si{\ampere}\\
+$I_0$ & Critical Current & \si{\ampere}\\
+$I_s$ & Superconducting Current & \si{\ampere}\\
+$L$ & Inductance & \si{\henry}\\
+$L_J$ & Josephson Inductance & \si{\henry}\\
+$n_g$ & Gate Charge Number & si{}\\
+$p$ & Momentum & \si{\kilogram\meter\per\second}\\
+$q$ & Charge & \si{\coulomb}\\
+$T_1$ & $z$ component Relaxation Time & \si{\second}\\
+$T_2$ & Transverse Relaxation Time & \si{\second}\\
+$U$ & Potential Energy & \si{\joule}\\
+$\hat{U}(t)$ & Unitary Time Evolution Operator & \si{}\\
+$V$ & Voltage & \si{\volt}\\
+$V_g$ & Gate Voltage & \si{\volt}\\
+$x$ & Position & \si{\meter}\\
+$Z_0$ & Characteristic Impedance & \si{\ohm}\\
+ \\
+$\alpha$ & Eigenvalue of Coherent State & \si{}\\
+$\alpha_h$ & Anharmonicity & \si{\joule}\\
+$\delta$ & Superconducting Phase Difference & \si{\radian}\\
+$\Delta$ & Detuning & \si{\hertz}\\
+$\sigma_-$ & Qubit Annihilation Operator & \si{}\\
+$\sigma_+$ & Qubit Creation Operator & \si{}\\
+$\sigma_z$ & $z$-Pauli Matrix & \si{}\\
+$\phi$ & Flux & \si{\weber}\\
+$\psi_0$ &  Ground State Wavefunction & \si{}\\
+$\omega_0$ & Resonance Frequency & \si{\radian\per\second} \\
+$\omega_d$ & Qubit Drive Signal Frequency & \si{\radian\per\second} \\
+$\omega_{ij}$ & $\ket{i}\rightarrow\ket{j}$ Transition Frequency & \si{\radian\per\second} \\
+$\omega_p$ & Probe Signal Frequency & \si{\radian\per\second} \\
+$\omega_q$ & Qubit Transition Frequency & \si{\radian\per\second} \\
+$\omega_r$ & Cavity Resonance Frequency & \si{\radian\per\second} \\
+ \\
+$\ket{e}$ & Qubit Excited State & \si{}\\
+$\ket{g}$ & Qubit Ground State & \si{}\\
+$\ket{n}$ & $n$th Number state & \si{}\\
+$\ket{\alpha}$ & Coherent State with eigenvalue of $\alpha$ & \si{}\\
+$\ket{\psi}$ & Arbitrary State & \si{}\\
 \end{symbols}
 
 %----------------------------------------------------------------------------------------
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{For/Dedicated to/To my\ldots} 
+%\dedicatory{For/Dedicated to/To my\ldots} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS

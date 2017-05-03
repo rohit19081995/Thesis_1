@@ -3,30 +3,30 @@
 \select@language {english}
 \contentsline {chapter}{Abstract}{i}{section*.1}
 \contentsline {chapter}{Acknowledgements}{ii}{section*.2}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.13}
-\contentsline {chapter}{\numberline {2}Microwave Resonators}{2}{chapter.14}
-\contentsline {section}{\numberline {2.1}Theory}{2}{section.15}
-\contentsline {subsection}{\numberline {2.1.1}Waveguides}{2}{subsection.16}
-\contentsline {subsubsection}{General Waveguide}{2}{subsubsection*.18}
-\contentsline {subsubsection}{Rectangular Waveguide}{5}{subsubsection*.39}
-\contentsline {subsection}{\numberline {2.1.2}Rectangular Waveguide Resonators}{8}{subsection.81}
-\contentsline {subsection}{\numberline {2.1.3}Coupling to an External Circuit}{12}{subsection.104}
-\contentsline {section}{\numberline {2.2}Experiment}{14}{section.107}
-\contentsline {chapter}{\numberline {3}Superconducting Qubit Theory}{20}{chapter.120}
-\contentsline {section}{\numberline {3.1}Classical LC oscillator}{20}{section.121}
-\contentsline {section}{\numberline {3.2}Quantum Electrical Circuits}{21}{section.124}
-\contentsline {subsection}{\numberline {3.2.1}Quantum LC oscillator}{21}{subsection.125}
-\contentsline {subsection}{\numberline {3.2.2}Nonlinear Harmonic Oscillator}{23}{subsection.139}
-\contentsline {section}{\numberline {3.3}The Josephson Junction}{25}{section.142}
-\contentsline {section}{\numberline {3.4}The Cooper Pair Box}{28}{section.155}
-\contentsline {section}{\numberline {3.5}The 3D Superconducting Transmon}{32}{section.177}
-\contentsline {section}{\numberline {3.6}Coupling the Transmon to a Resonator}{34}{section.182}
-\contentsline {section}{\numberline {3.7}The Bloch Sphere}{36}{section.192}
-\contentsline {section}{\numberline {3.8}Dynamics of the Jaynes-Cummings system}{38}{section.196}
-\contentsline {section}{\numberline {3.9}Decoherence}{43}{section.215}
-\contentsline {section}{\numberline {3.10}Measurement Theory (Dispersive Limit)}{44}{section.216}
-\contentsline {subsection}{\numberline {3.10.1}Single tone measurement}{45}{subsection.218}
-\contentsline {subsection}{\numberline {3.10.2}Two tone measurement}{45}{subsection.219}
-\contentsline {chapter}{\numberline {A}Calculation of Required Junction Resistance}{47}{appendix.220}
-\contentsline {chapter}{\numberline {B}Time Domain Measurements}{49}{appendix.229}
-\contentsline {chapter}{Bibliography}{51}{appendix*.233}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.12}
+\contentsline {chapter}{\numberline {2}Microwave Resonators}{2}{chapter.13}
+\contentsline {section}{\numberline {2.1}Theory}{2}{section.14}
+\contentsline {subsection}{\numberline {2.1.1}Waveguides}{2}{subsection.15}
+\contentsline {subsubsection}{General Waveguide}{2}{subsubsection*.17}
+\contentsline {subsubsection}{Rectangular Waveguide}{5}{subsubsection*.38}
+\contentsline {subsection}{\numberline {2.1.2}Rectangular Waveguide Resonators}{8}{subsection.80}
+\contentsline {subsection}{\numberline {2.1.3}Coupling to an External Circuit}{12}{subsection.103}
+\contentsline {section}{\numberline {2.2}Experiment}{13}{section.106}
+\contentsline {chapter}{\numberline {3}Superconducting Qubit Theory}{19}{chapter.119}
+\contentsline {section}{\numberline {3.1}Classical LC oscillator}{19}{section.120}
+\contentsline {section}{\numberline {3.2}Quantum Electrical Circuits}{20}{section.123}
+\contentsline {subsection}{\numberline {3.2.1}Quantum LC oscillator}{20}{subsection.124}
+\contentsline {subsection}{\numberline {3.2.2}Nonlinear Harmonic Oscillator}{22}{subsection.138}
+\contentsline {section}{\numberline {3.3}The Josephson Junction}{24}{section.141}
+\contentsline {section}{\numberline {3.4}The Cooper Pair Box}{27}{section.154}
+\contentsline {section}{\numberline {3.5}The 3D Superconducting Transmon}{31}{section.176}
+\contentsline {section}{\numberline {3.6}Coupling the Transmon to a Resonator}{33}{section.181}
+\contentsline {section}{\numberline {3.7}The Bloch Sphere}{35}{section.192}
+\contentsline {section}{\numberline {3.8}Dynamics of the Jaynes-Cummings system}{37}{section.196}
+\contentsline {section}{\numberline {3.9}Decoherence}{42}{section.215}
+\contentsline {section}{\numberline {3.10}Measurement Theory (Dispersive Limit)}{43}{section.216}
+\contentsline {subsection}{\numberline {3.10.1}Single tone measurement}{44}{subsection.218}
+\contentsline {subsection}{\numberline {3.10.2}Two tone measurement}{44}{subsection.219}
+\contentsline {chapter}{\numberline {A}Calculation of Required Junction Resistance}{46}{appendix.220}
+\contentsline {chapter}{\numberline {B}Time Domain Measurements}{48}{appendix.229}
+\contentsline {chapter}{Bibliography}{50}{appendix*.233}

@@ -181,11 +181,11 @@ E_{kin}=\frac{1}{2}Mv^2=\frac{1}{2}C\left(\frac{\hbar}{2e}\right)^2\left(\frac{d
 
 \section{The Cooper Pair Box}
 
-The \CPB circuit is shown in Fig.\ref{fig:cooperpairbox}. It consists of a superconducting island capacitively coupled (with capacitance $C_g$) to a voltage source ($V_g$) connected to ground, and a \JJ connected to the ground. The \JJ can be represented by a capacitance ($C_j$) and the bare \JJ (represented by $E_j$) as shown in the figure.
+The \CPB circuit is shown in Fig.\ref{fig:cooperpairbox}. It consists of a superconducting island capacitively coupled (with capacitance $C_g$) to a voltage source ($V_g$) connected to ground, and a \JJ connected to the ground. The \JJ can be represented by a capacitance ($C_j$) and the bare \JJ (represented by $E_J$) as shown in the figure.
 
 \begin{figure}
 \centering
-\includegraphics{Figures/CPB}
+\includegraphics{Figures/CPB.png}
 \decoRule
 \caption[\CPB circuit]{The \CPB circuit with the \JJ represented as a bare \JJ with Josephson Energy $E_J$ and a capacitance $C_j$.}
 \label{fig:cooperpairbox}
@@ -229,7 +229,7 @@ we can recursively use this relation to get
 \left[\hat{n},\hat{\delta}^m\right]&=-jm(\hat{\delta})^{m-1}\\
 \hat{n}\hat{\delta}^m&=-jm\hat{\delta}^{m-1}+\hat{\delta}^m\hat{n}
 \end{align}
-The operator $\hat{n}e^{jp\hat{\delta}}$ after expansion is
+The operator $\hat{n}e^{jp\hat{\delta}}$, where $p\in Z$, after expansion is
 \begin{align}
 \begin{split}
 \hat{n}e^{jp\hat{\delta}}&=\hat{n}\sum_{m=0}^\infty \frac{( jp\hat{\delta})^m}{m!}=\sum_{m=0}^\infty \frac{(jp)^m\hat{n}\hat{\delta}^m}{m!}\\
@@ -294,7 +294,7 @@ The energy levels ($E_k$) plotted against gate charge ($n_g$) for different $E_J
 \label{fig:diff EJ/EC}
 \end{figure}
 
-As we can see the charge noise is very low for the case of high $E_J/E_C$. Also, anharmonicity, which is defined as $\alpha=E_{21}-E_{10}$, is reduced but not zero. In-fact, charge noise reduces exponentially while anharmonicity reduces only algebraically as $E_J/E_C$ is increased. This is the basis on which the transmon qubit is realised.
+As we can see the charge noise is very low for the case of high $E_J/E_C$. Also, anharmonicity, which is defined as $\alpha_h=E_{21}-E_{10}$, is reduced but not zero. In-fact, charge noise reduces exponentially while anharmonicity reduces only algebraically as $E_J/E_C$ is increased. This is the basis on which the transmon qubit is realised.
 
 The Hamiltonian can also be solved using perturbation theory in the limit $E_J/E_C\gg 1$ by expanding the cosine in the tunnelling energy up to fourth order and treating the fourth order term as a perturbation. There is no dependence on $n_g$ because the system is charge insensitive at high $E_J/E_C$. The energy levels are \cite{Koch2007a}
 
@@ -309,12 +309,20 @@ From \ref{eqn:transmon levels} we can see that the qubit transition frequency ($
 \end{equation}
 and the anharmonicity
 \begin{equation}
-\alpha=(E_2-E_1)-(E_1-E_0)=-E_C
+\alpha_h=(E_2-E_1)-(E_1-E_0)=-E_C
 \end{equation}
 
 \section{Coupling the Transmon to a Resonator}
 
 For qubit readout and control, we will couple the qubit to a microwave cavity resonator (A rectangular waveguide resonator in this case). The lumped element circuit model of the qubit and cavity resonator is shown in Fig.\ref{fig:transmon with cavity}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Figures/transmon_circuit.png}
+\decoRule
+\caption[Transmon Circuit]{Transmon coupled to the resonator coupled to the measurement device.}
+\label{fig:transmon with cavity}
+\end{figure}
 
 We can approximate the transmon as a 2 level system with a ground state $\ket{g}$ and excited state $\ket{e}$ for large anharmonicity. In this approximation, the Hamiltonian of the system is discussed below  \cite{Richer2013,Schuster2007}.
 \begin{itemize}
@@ -361,15 +369,15 @@ where $\Delta=\omega_r-\omega_q$ and
 
 A general pure state for a two level system can represented as
 \begin{equation}
-\ket{\psi} = \alpha\ket{0}+\beta\ket{1}
+\ket{\psi} = c_0\ket{0}+c_1\ket{1}
 \end{equation}
-where $\ket{0}$ and $\ket{1}$ form an orthonormal basis. $\alpha=|\alpha|e^{j\phi_1}$ and $\beta=|\beta|e^{jphi_2}$ are complex numbers with a constraint that $|\alpha|^2+|\beta|^2 = 1$ due to normalization. Since one can only measure the phase difference $\phi = \phi_2-\phi_1$, the state can be represented as
+where $\ket{0}$ and $\ket{1}$ form an orthonormal basis. $c_0=|c_0|e^{j\phi_1}$ and $c_1=|c_1|e^{j\phi_2}$ are complex numbers with a constraint that $|c_0|^2+|c_1|^2 = 1$ due to normalization. Since one can only measure the phase difference $\phi = \phi_2-\phi_1$, the state can be represented as
 \begin{equation}
 \ket{\psi} = \cos\frac{\theta}{2}\ket{0}+e^{j\phi}\sin\frac{\theta}{2}\ket{1}
 \end{equation}
-with no loss of generality where $\theta= 2\cos^{-1}|\alpha|$.
+with no loss of generality where $\theta= 2\cos^{-1}|c_0|=2\sin^{-1}|c_1|$.
 
-This state can be represented on a sphere with spherical coordinated with $\rho = 1$. The $\ket{0}$,$\ket{1}$ and an arbitrary state is shown in the Bloch Sphere in Fig.\ref{fig:bloch rep}.
+This state can be represented on a sphere with spherical coordinates on the surface with radius $r = 1$. The $\ket{0}$,$\ket{1}$ and an arbitrary state is shown in the Bloch Sphere in Fig.\ref{fig:bloch rep}.
 
 \begin{figure}
 \centering
@@ -388,11 +396,11 @@ If there is no coupling (no photons in the cavity), then the qubit follows the f
 \begin{equation}
 \hat{\mathcal{H}}_{qubit} = -\hbar\omega_q/2\ket{e}\bra{e} + \hbar\omega_q/2\ket{g}\bra{g}
 \end{equation}
-Applying the unitary operator $e^{i\hat{\mathcal{H}}t/\hbar}$ to an initial superposition state $\ket{\psi(0)}=\alpha\ket{e}+\beta\ket{g}$ gives the state at a time $t$
+Applying the unitary operator $e^{i\hat{\mathcal{H}}t/\hbar}$ to an initial superposition state $\ket{\psi(0)}=c_0\ket{e}+c_1\ket{g}$ gives the state at a time $t$
 \begin{align}
 \begin{split}
 \ket{\psi(t)} &= e^{i\hat{\mathcal{H}}t/\hbar}\ket{\psi(0)}\\
-&=e^{-i\omega_qt/2}\left(\alpha\ket{e}+e^{i\omega_q t}\beta{g}\right)
+&=e^{-i\omega_qt/2}\left(c_0\ket{e}+e^{i\omega_q t}c_1{g}\right)
 \end{split}
 \end{align}
 
@@ -431,7 +439,7 @@ If the drive signal or photons are at the same frequency as the qubit, then $\De
 \ket{n,-} &= -\frac{1}{\sqrt{2}}\ket{e}\ket{n}+\frac{1}{\sqrt{2}}\ket{g}\ket{n+1}
 \end{align}
 \end{subequations}
-With the new eigenstates, the qubit will oscillate about the $x$-axis as shown in Fig.\ref{fig:rotatex}. This means that if the initial state of the qubit is $\ket{g}$, it will oscillate to $\ket{e}$ in time $t=\pi g\sqrt{n+1}$. A pulsed signal which causes this transition\footnote{This signal refers to any signal which is resonant with the qubit and causes a rotation of $\pi$ radians about the $x$-axis on the Bloch Sphere.} is called a pi-pulse The excitation number of the cavity will also oscillate from $\ket{n+1}$ to $\ket{n}$ with the same frequency.
+With the new eigenstates, the qubit will oscillate about the $x$-axis as shown in Fig.\ref{fig:rotatex}. This means that if the initial state of the qubit is $\ket{g}$, it will oscillate to $\ket{e}$ in time $t=\pi g\sqrt{n+1}$. A pulsed signal which causes this transition\footnote{This signal refers to any signal which is resonant with the qubit and causes a rotation of $\pi$ radians about the $x$-axis on the Bloch Sphere.} is called a $\pi$-pulse The excitation number of the cavity will also oscillate from $\ket{n+1}$ to $\ket{n}$ with the same frequency.
 
 It is worth noting that if the resonant frequency of the cavity is far from that of the qubit, and if the drive signal is of qubit frequency, then the qubit will still oscillate because it takes finite time for the photons to decay in the cavity.
 
@@ -524,7 +532,7 @@ The setup for measurements is shown in Fig.\ref{fig:measurement setup}. All meas
 
 In this measurement the drive signal is switched off and only the probe signal is sent to the cavity. We can plot the amplitude as a function of power and frequency of this signal. During this measurement, the qubit remains in the ground state except at high powers. This measurement was performed in \cite{Paik2011} with a 3D Transmon. The result of this measurement is similar to the ground state measurement in \cite{Reed2010}.
 
-If the qubit is excited with a pi pulse at every point (i.e. for each frequency and power) and the amplitude is recorded for a certain period of time ($\approx$ 400 ns) and averaged, we can see the response of both the ground state and excited states. This experiment was performed in \cite{Reed2010} with a 2D Transmon.
+If the qubit is excited with a $\pi$-pulse at every point (i.e. for each frequency and power) and the amplitude is recorded for a certain period of time ($\approx$ 400 ns) and averaged, we can see the response of both the ground state and excited states. This experiment was performed in \cite{Reed2010} with a 2D Transmon.
 
 \begin{itemize}
 \item \textbf{Low Power Measurement}
@@ -548,4 +556,4 @@ Varying the frequencies and powers of the two signals can produce useful results
 \item If the probe frequency is fixed close to the dispersively shifted resonance corresponding to one of the qubit states with a strong coupling rate and parameters such that $2\chi>\gamma,\kappa$, then spectroscopy with the drive frequency reveals the photon number state distribution in the cavity with different peaks corresponding to each photon number state. This is due to ac-Stark shift and is demonstrated using a \CPB in \cite{Schuster2007a}.
 \end{itemize}
 
-Details about Time Domain Measurements can be found in \ref{AppendixB}
+Details about Time Domain Measurements can be found in Appendix-\ref{AppendixB}

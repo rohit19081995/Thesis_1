@@ -2,7 +2,7 @@
 
 \chapter{Microwave Resonators} % Main chapter title
 
-\label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -354,7 +354,7 @@ The power lost by the conducting walls is
 \begin{equation}
 P_c=\frac{R_s}{2}\int_{walls} |H_t|^2ds
 \end{equation}
-where $R_s=\sqrt{\omega\mu_0/w\sigma}$ is the surface resistivity and $H_t$ is the tangential magnetic field at the walls. This gives
+where $R_s=\sqrt{\omega\mu_0/(2\sigma)}$ is the surface resistivity and $H_t$ is the tangential magnetic field at the walls. This gives
 \begin{equation}
 P_c=\frac{R_sE_0^2\lambda^2}{8\eta^2}\left(\frac{l^2ab}{d^2}+\frac{bd}{a^2}+\frac{l^2a}{2d}+\frac{d}{2a}\right)
 \end{equation}
@@ -375,7 +375,7 @@ Q&=\omega\frac{\text{average energy stored}}{\text{average power loss}}\\
 
 \subsection{Coupling to an External Circuit}
 
-A resonator is useless if we cannot communicate with it in some way. There are many ways of interacting with a resonator. In the experiments to follow, the rectangular cavity resonator will be coupled to and external circuit through a probe of height $h$ inserted at the $y=0$ wall at $x=a/4$ and $z=z_0$. A figure of the probe inserted in the rectangular cavity is shown in Fig.\ref{fig:Probe}.
+A resonator is useless if we cannot communicate with it in some way. There are many ways of interacting with a resonator. In the experiments to follow, the rectangular cavity resonator will be coupled to and external circuit through a probe of height $h$ inserted at the $y=0$ wall at $x=a/4$ and $z=0$. A figure of the probe inserted in the rectangular cavity is shown in Fig.\ref{fig:Probe}.
 
 \begin{figure}
 \centering
@@ -422,12 +422,13 @@ The $S_{11}$ parameter is the ratio of the voltage detected to voltage sent into
 \includegraphics[width=350px]{Figures/dil_fridge.jpg}
 \decoRule
 \caption[Dilution Refrigerator]{The Dilution Refrigerator.}
-\label{fig:circuit with fridge}
+\label{fig:real fridge}
 \end{figure}
 
 The $S_{11}$ response for a microwave resonator is given by \cite{Aspelmeyer2014}
 \begin{equation}
 S_{11}(\omega) = 1-\frac{\kappa_e}{\kappa/2+j(\omega-\omega_0)}
+\label{eqn:s11 sym}
 \end{equation}
 where\\
 $\omega_0$ is the resonant frequency of the cavity,\\
@@ -443,12 +444,12 @@ Q_{internal} &= \left(\frac{1}{Q_{total}}-\frac{1}{Q_{external}}\right)^{-1}\\
 The $S_{11}$ response of the cavity is asymmetrical, as shown in Fig. \ref{fig:cavity response}, due to the finite cable length and finite isolation of the directional coupler.
 \begin{itemize}
 \item The effect of the finite cable length is an added frequency dependent phase factor $\text{exp}(2j\omega l/v_p)$ where $l$ is the cable length and $v_p=c/\sqrt{\epsilon_r}$ is the phase velocity. The '$2$' in the expression is because the cable length is traversed twice.\\
-This factor is multiplied to the original expression for $S_{11}$ in \ref{eqn:S11 sym}.
-\item The effect of the finite isolation of the directional coupler is modelled by considering a part of the signal as a complex background ($\alpha e^{j\phi}$) and the rest of the signal ($(1-\alpha)S_{11}$) as the $S_{11}$ response.
+This factor is multiplied to the original expression for $S_{11}$ in \ref{eqn:s11 sym}.
+\item The effect of the finite isolation of the directional coupler is modelled by considering a part of the signal as a complex background ($\alpha_i e^{j\phi}$) and the rest of the signal ($(1-\alpha_i)S_{11}$) as the $S_{11}$ response.
 \end{itemize}
 So the final function used to fit the data from Fig.\ref{fig:circuit with fridge} and get the parameters $\omega_0$,$\kappa$ and $\kappa$ is
 \begin{equation}
-S_{11}(\omega) = \alpha e^{j\phi}+(1-\alpha)\left(1-\frac{\kappa_e}{\kappa/2+j(\omega-\omega_0)}\right)e^{2j\omega l/v_p}
+S_{11}(\omega) = \alpha_i e^{j\phi}+(1-\alpha_i)\left(1-\frac{\kappa_e}{\kappa/2+j(\omega-\omega_0)}\right)e^{2j\omega l/v_p}
 \end{equation}
 
 \begin{figure}
@@ -461,7 +462,7 @@ S_{11}(\omega) = \alpha e^{j\phi}+(1-\alpha)\left(1-\frac{\kappa_e}{\kappa/2+j(\
 
 The $S_{11}$ measurement was performed for different pin lengths\footnote{The lengths of the connector pin referred to here includes the wall of the cavity. So, the actual length of the connector pin that is in the cavity is $\SI{5}{\milli\meter}$ lesser than the given length.} inserted into the cavity at room temperature. The quality factors obtained from this measurement is shown in Fig.\ref{fig:diff lengths}. The coupling Quality Factor $Q_c$ increases with decreasing pin length, while the internal Quality Factor remains the same.
 
-The same measurement is made by using a constant pin length of $4.5 mm$, but this time at a temperature of $20mK$. The internal quality factor is larger than the coupling quality factor at this temperature mainly because aluminium is superconducting below $1.1K$. Fig.\ref{fig:cold qualities} shows a plot of $Q_i$, $Q_c$ and $Q_t$ as a function of the average number of photons in the cavity. A sample plot of amplitude and phase data for a power of -35dBm is shown in Fig.\ref{fig:fit}.
+The same measurement is made by using a constant pin length of $4.5 mm$, but this time at a temperature of $20mK$. The internal quality factor is larger than the coupling quality factor at this temperature mainly because aluminium is superconducting below $1.1K$. Fig.\ref{fig:cold qualities} shows a plot of $Q_i$, $Q_c$ and $Q_t$ as a function of the average number of photons in the cavity. A sample plot of amplitude and phase data for a power of -35dBm is shown in Fig.\ref{fig:fit}. The coupling Quality Factor $Q_c$ remains the same, suggesting that it does not depend on the number of photons in the cavity. The internal Quality Factor has an increasing trend. This can be explained using Two-Level Systems in the material which get saturated to their excited states at higher photon numbers\cite{Gao2007}.
 
 \begin{figure}
 \centering
@@ -478,5 +479,3 @@ The same measurement is made by using a constant pin length of $4.5 mm$, but thi
 \caption[Quality Factors for different powers at low temperature]{Quality factors for different powers at low temperature. $Q_i$ is the internal Quality, $Q_c$ is the external Quality, and $Q_t$ is the total Quality.}
 \label{fig:cold qualities}
 \end{figure}
-
-The coupling Quality Factor $Q_c$ remains the same, suggesting that it does not depend on the number of photons in the cavity. The internal Quality Factor has an increasing trend. This can be explained using Two-Level Systems in the material which get saturated to their excited states at higher photon numbers\cite{Gao2007}.
