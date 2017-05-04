@@ -4,14 +4,12 @@
 
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-The key to improving computing performance for the past few years has been to reduce the size of the transistors used in the process, but this process cannot continue for much longer since the effects of quantum mechanics will prevent the further reduction of transistor size.
+The key to improving computing performance for the past few years has been to reduce the size of the transistors used in the processor, but this process cannot continue for much longer since the effects of quantum mechanics will prevent the further reduction of transistor size.
 
-In 1982, Richard Feynman suggested that we could use the effects of quantum mechanics to our advantage and build a "quantum computer". For a few decades, quantum computers were only of theoretical interest. Many quantum algorithms were developed which could perform  certain tasks exponentially faster than their classical counterparts.
+In 1982, Richard Feynman suggested that we could use the effects of quantum mechanics to our advantage and build a "quantum computer". For a few decades, quantum computers were only of theoretical interest. Many quantum algorithms were developed which could perform  certain tasks exponentially faster than their classical counterparts. In 1998, the first Nuclear Magnetic Resonance (NMR) quantum computers were implemented.
 
-In 1998, the first Nuclear Magnetic Resonance (NMR) quantum computers were implemented.
+A different field of research which focused on controlling individual quantum systems is Cavity QED, which is the study of light in a Fabry-Perot cavity interacting with Rydberg atoms, can be used for many physical applications including quantum computing and has been studied since the 1940s.
 
-Cavity QED, which is the study of light in a superconducting reflective cavity interacting with atoms, can be used for many physical applications including quantum computing and has been studied since the 1940s.
+Circuit QED, which is basically cavity QED where superconducting circuits are used instead of a reflective cavity. Microwave photons are used instead of optical light and Josephson Junctions are used instead of atoms. The {\JJ}s have a transition frequency which is of the same order as microwaves.
 
-Circuit QED, which is basically cavity QED where superconducting circuits are used instead of a reflective cavity. Microwave photons are used instead of optical light and {\JJ}s are used instead of atoms. The {\JJ}s have a transition frequency which is of the same order as microwaves.
-
-This thesis describes the use of a superconducting cavity as a microwave resonator, and discusses it's interaction with  an implementation of a qubit, called a transmon.
+This thesis describes the use of a superconducting rectangular aluminium cavity as a microwave resonator. The aluminium cavity is cooled to $\SI{20}{\milli\kelvin}$ using a dilution refrigerator. A Vector Network Analyser is used for spectroscopic measurement of the reflection coefficient, and its quality factor is extracted. The desired coupling of the measurement setup with the cavity is tuned by trimming a connector pin which probes the cavity and extracting the quality factor at room temperature. Once the cavity is cooled to $\SI{20}{\milli\kelvin}$ using a dilution refrigerator, the internal quality factor is found to be $\approx 1000000$. The transmon qubit, which is a \JJ with a large shunt capacitance is used due to its negligible charge noise and non-zero anharmonicity. Anharmonicity is necessary to access only 2 energy levels of the transmon, which is the basis for a qubit. The dynamics of coupling the transmon with the microwave resonator is discussed. Methods to characterize the coherence times of the qubit using microwave signals are presented.
