@@ -441,7 +441,7 @@ Q_{external} &= \frac{\omega_0}{\kappa_e}\\
 Q_{internal} &= \left(\frac{1}{Q_{total}}-\frac{1}{Q_{external}}\right)^{-1}\\
 \end{align}
 
-The $S_{11}$ response of the cavity is asymmetrical, as shown in Fig. \ref{fig:cavity response}, due to the finite cable length and finite isolation of the directional coupler.
+The $S_{11}$ response of the cavity is asymmetrical, as shown in Fig. \ref{fig:fit}, due to the finite cable length and finite isolation of the directional coupler.
 \begin{itemize}
 \item The effect of the finite cable length is an added frequency dependent phase factor $\text{exp}(2j\omega l/v_p)$ where $l$ is the cable length and $v_p=c/\sqrt{\epsilon_r}$ is the phase velocity. The '$2$' in the expression is because the cable length is traversed twice.\\
 This factor is multiplied to the original expression for $S_{11}$ in \ref{eqn:s11 sym}.
@@ -454,15 +454,23 @@ S_{11}(\omega) = \alpha_i e^{j\phi}+(1-\alpha_i)\left(1-\frac{\kappa_e}{\kappa/2
 
 \begin{figure}
 \centering
+\includegraphics[width=\linewidth]{Figures/s11fitroom.png}
+\decoRule
+\caption[Sample Room Temperature Fit]{A sample of data and fit of $S_{11}$ at room temperature for a pin length of 4.8 mm and a power of -35dBm. The red dots are the data from the VNA, and the blue line is the fit.}
+\label{fig:room fit}
+\end{figure}
+
+\begin{figure}
+\centering
 \includegraphics[width=\linewidth]{Figures/diff_lengths.png}
 \decoRule
-\caption[Quality Factors for different pin lengths]{Quality factors for different pin lengths. $Q_i$ is the internal Quality, $Q_c$ is the external Quality, and $Q_t$ is the total Quality. The coupling Quality Factor $Q_c$ is increasing with decreasing pin lengths.}
+\caption[Quality Factors for different pin lengths]{Quality factors for different pin lengths averaged over different powers. $Q_i$ is the internal Quality, $Q_c$ is the external Quality, and $Q_t$ is the total Quality. The coupling Quality Factor $Q_c$ is increasing with decreasing pin lengths.}
 \label{fig:diff lengths}
 \end{figure}
 
 The $S_{11}$ measurement was performed for different pin lengths\footnote{The lengths of the connector pin referred to here includes the wall of the cavity. So, the actual length of the connector pin that is in the cavity is $\SI{5}{\milli\meter}$ lesser than the given length.} inserted into the cavity at room temperature. This was done in order to tune the coupling quality factor $Q_c$ such that the internal quality factor $Q_i$ would be equal to $Q_c$ once the cavity is cooled to $\SI{20}{\milli]kelvin}$, leading to a critically coupled system.
 
-The quality factors obtained from this measurement are shown in Fig.\ref{fig:diff lengths}. The coupling Quality Factor $Q_c$ increases with decreasing pin length, while the internal Quality Factor remains the same.
+A sample of the data obtained is shown in Fig.\ref{fig:room fit} for a pin length of $\SI{4.8}{\milli\meter}$ and power of $-30$ dBm. The average\footnote{The Quality factors shown in Fig.\ref{fig:diff lengths} are an average over many powers. The Quality factors do not show a significant change with different powers at room temperature.} quality factors obtained from this measurement are shown in Fig.\ref{fig:diff lengths}. The coupling Quality Factor $Q_c$ increases with decreasing pin length, while the internal Quality Factor remains the same.
 
 The same measurement is made by using a constant pin length of $4.5 mm$, but this time at a temperature of $20mK$. The internal quality factor is larger than the coupling quality factor at this temperature mainly because aluminium is superconducting below $1.1K$. Fig.\ref{fig:cold qualities} shows a plot of $Q_i$, $Q_c$ and $Q_t$ as a function of the average number of photons in the cavity. A sample plot of amplitude and phase data for a power of -35dBm is shown in Fig.\ref{fig:fit}. The coupling Quality Factor $Q_c$ remains the same, suggesting that it does not depend on the number of photons in the cavity. The internal Quality Factor has an increasing trend. This can be explained using Two-Level Systems in the material which get saturated to their excited states at higher photon numbers\cite{Gao2007}.
 

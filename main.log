@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.12.29)  4 MAY 2017 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2016.12.29)  6 MAY 2017 11:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -3011,7 +3011,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 20.
-<Figures/Waveguides.pdf, id=271, 407.6831pt x 238.52112pt>
+<Figures/Waveguides.pdf, id=273, 407.6831pt x 238.52112pt>
 File: Figures/Waveguides.pdf Graphic file (type pdf)
 
 <use Figures/Waveguides.pdf>
@@ -3032,35 +3032,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
-[9] [10] [11] [12] <Figures/probe.png, id=433, 571.38469pt x 173.89969pt>
+[9] [10] [11] [12] <Figures/probe.png, id=435, 571.38469pt x 173.89969pt>
 File: Figures/probe.png Graphic file (type png)
 
 <use Figures/probe.png>
 Package pdftex.def Info: Figures/probe.png used on input line 382.
 (pdftex.def)             Requested size: 250.93842pt x 76.3728pt.
 
-<Figures/external.png, id=435, 308.82121pt x 171.6627pt>
+<Figures/external.png, id=437, 308.82121pt x 171.6627pt>
 File: Figures/external.png Graphic file (type png)
 
 <use Figures/external.png>
 Package pdftex.def Info: Figures/external.png used on input line 392.
 (pdftex.def)             Requested size: 250.93842pt x 139.4887pt.
  [13 <./Figures/probe.png> <./Figures/external.png>]
-<Figures/cavity.png, id=444, 1233.85968pt x 362.85562pt>
+<Figures/cavity.png, id=446, 1233.85968pt x 362.85562pt>
 File: Figures/cavity.png Graphic file (type png)
 
 <use Figures/cavity.png>
 Package pdftex.def Info: Figures/cavity.png used on input line 404.
 (pdftex.def)             Requested size: 351.31378pt x 103.31526pt.
 
-<Figures/circuit.png, id=449, 386.8854pt x 649.4664pt>
+<Figures/circuit.png, id=451, 386.8854pt x 649.4664pt>
 File: Figures/circuit.png Graphic file (type png)
 
 <use Figures/circuit.png>
 Package pdftex.def Info: Figures/circuit.png used on input line 414.
 (pdftex.def)             Requested size: 351.31378pt x 589.75677pt.
 
-<Figures/dil_fridge.jpg, id=450, 3468.96pt x 4625.28pt>
+<Figures/dil_fridge.jpg, id=452, 3468.96pt x 4625.28pt>
 File: Figures/dil_fridge.jpg Graphic file (type jpg)
 
 <use Figures/dil_fridge.jpg>
@@ -3070,11 +3070,8 @@ Package pdftex.def Info: Figures/dil_fridge.jpg used on input line 422.
 
  <./Figures/cavity.png>] [15 <./Figures/circuit.png>] [16 <./Figures/dil_fridge
 .jpg>]
-
-LaTeX Warning: Reference `fig:cavity response' on page 17 undefined on input li
-ne 444.
-
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 446.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
@@ -3082,32 +3079,39 @@ File: omsppl.fd
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 446.
 
-<Figures/diff_lengths.png, id=471, 722.7pt x 433.62pt>
+<Figures/s11fitroom.png, id=474, 578.16pt x 433.62pt>
+File: Figures/s11fitroom.png Graphic file (type png)
+
+<use Figures/s11fitroom.png>
+Package pdftex.def Info: Figures/s11fitroom.png used on input line 457.
+(pdftex.def)             Requested size: 404.02908pt x 303.02246pt.
+
+<Figures/diff_lengths.png, id=475, 722.7pt x 433.62pt>
 File: Figures/diff_lengths.png Graphic file (type png)
 
 <use Figures/diff_lengths.png>
-Package pdftex.def Info: Figures/diff_lengths.png used on input line 457.
+Package pdftex.def Info: Figures/diff_lengths.png used on input line 465.
 (pdftex.def)             Requested size: 404.02908pt x 242.41531pt.
- [17]
-<Figures/s11fit.png, id=489, 615.7404pt x 616.4631pt>
+ [17] [18 <./Figures/s11fitroom.png> <./Figures/diff_lengths.png>] <Figures/s11
+fit.png, id=503, 615.7404pt x 616.4631pt>
 File: Figures/s11fit.png Graphic file (type png)
- <use Figures/s11fit.png>
-Package pdftex.def Info: Figures/s11fit.png used on input line 471.
+
+<use Figures/s11fit.png>
+Package pdftex.def Info: Figures/s11fit.png used on input line 479.
 (pdftex.def)             Requested size: 301.1261pt x 301.48636pt.
 
-<Figures/cold_qualities.png, id=490, 722.7pt x 433.62pt>
+<Figures/cold_qualities.png, id=504, 722.7pt x 433.62pt>
 File: Figures/cold_qualities.png Graphic file (type png)
 
 <use Figures/cold_qualities.png>
-Package pdftex.def Info: Figures/cold_qualities.png used on input line 479.
+Package pdftex.def Info: Figures/cold_qualities.png used on input line 487.
 (pdftex.def)             Requested size: 404.02908pt x 242.41531pt.
-) [18 <./Figures/diff_lengths.png>] [19 <./Figures/s11fit.png> <./Figures/cold_
-qualities.png>]
+) [19] [20 <./Figures/s11fit.png> <./Figures/cold_qualities.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (Chapters/Chapter3.tex
 Chapter 3.
-<Figures/LC_oscillator.png, id=503, 645.41125pt x 527.9725pt>
+<Figures/LC_oscillator.png, id=517, 645.41125pt x 527.9725pt>
 File: Figures/LC_oscillator.png Graphic file (type png)
 
 <use Figures/LC_oscillator.png>
@@ -3115,14 +3119,14 @@ Package pdftex.def Info: Figures/LC_oscillator.png used on input line 15.
 (pdftex.def)             Requested size: 150.0pt x 122.704pt.
 
 1: section
-[20
+[21
 
 
 
- <./Figures/LC_oscillator.png (PNG copy)>] [21
+ <./Figures/LC_oscillator.png (PNG copy)>] [22
 
 ]
-<Figures/harmonic_oscillator.png, id=527, 750.805pt x 506.89375pt>
+<Figures/harmonic_oscillator.png, id=540, 750.805pt x 506.89375pt>
 File: Figures/harmonic_oscillator.png Graphic file (type png)
 
 <use Figures/harmonic_oscillator.png>
@@ -3131,38 +3135,38 @@ Package pdftex.def Info: Figures/harmonic_oscillator.png used on input line 77.
 (pdftex.def)             Requested size: 404.02908pt x 272.77493pt.
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
- [22 <./Figures/harmonic_oscillator.png (PNG copy)>] [23] [24] <Figures/SISJJ.p
-ng, id=557, 501.875pt x 328.22626pt>
+ [23 <./Figures/harmonic_oscillator.png (PNG copy)>] [24] [25] <Figures/SISJJ.p
+ng, id=570, 501.875pt x 328.22626pt>
 File: Figures/SISJJ.png Graphic file (type png)
 
 <use Figures/SISJJ.png>
 Package pdftex.def Info: Figures/SISJJ.png used on input line 125.
 (pdftex.def)             Requested size: 404.02908pt x 264.24913pt.
- [25
+ [26
 
- <./Figures/SISJJ.png>] [26] [27]
-<Figures/CPB.png, id=595, 216.81pt x 130.8087pt>
+ <./Figures/SISJJ.png>] [27] [28]
+<Figures/CPB.png, id=608, 216.81pt x 130.8087pt>
 File: Figures/CPB.png Graphic file (type png)
  <use Figures/CPB.png>
 Package pdftex.def Info: Figures/CPB.png used on input line 188.
 (pdftex.def)             Requested size: 216.80946pt x 130.80836pt.
 
-<Figures/EjEc=0.png, id=598, 364.36125pt x 306.39468pt>
+<Figures/EjEc=0.png, id=611, 364.36125pt x 306.39468pt>
 File: Figures/EjEc=0.png Graphic file (type png)
 
 <use Figures/EjEc=0.png>
 Package pdftex.def Info: Figures/EjEc=0.png used on input line 207.
 (pdftex.def)             Requested size: 300.0pt x 252.28316pt.
- [28
+ [29
 
- <./Figures/CPB.png>] [29 <./Figures/EjEc=0.png>]
-[30] [31]
+ <./Figures/CPB.png>] [30 <./Figures/EjEc=0.png>]
+[31] [32]
 Overfull \hbox (3.48062pt too wide) in paragraph at lines 285--286
 \T1/ppl/m/n/10.95 A Trans-mon is ba-si-cally a Cooper Pair Box in which the Jos
 eph-son Junc-tion is shunted
  []
 
-<Figures/EjEcall.png, id=647, 909.3975pt x 743.77875pt>
+<Figures/EjEcall.png, id=661, 909.3975pt x 743.77875pt>
 File: Figures/EjEcall.png Graphic file (type png)
 
 <use Figures/EjEcall.png>
@@ -3174,92 +3178,92 @@ Overfull \hbox (13.02438pt too wide) in paragraph at lines 299--300
  the-ory in the limit $\OML/cmm/m/it/10.95 E[]=E[] \OMS/cmsy/m/n/10.95 
  []
 
-[32
+[33
 
- <./Figures/EjEcall.png>] [33]
-<Figures/transmon_circuit.png, id=666, 435.0654pt x 212.11246pt>
+ <./Figures/EjEcall.png>] [34]
+<Figures/transmon_circuit.png, id=679, 435.0654pt x 212.11246pt>
 File: Figures/transmon_circuit.png Graphic file (type png)
 
 <use Figures/transmon_circuit.png>
 Package pdftex.def Info: Figures/transmon_circuit.png used on input line 321.
 (pdftex.def)             Requested size: 404.02908pt x 196.98094pt.
- [34
+ [35
 
  <./Figures/transmon_circuit.png>]
-[35] <Figures/bloch_rep.png, id=690, 505.89pt x 505.89pt>
+[36] <Figures/bloch_rep.png, id=703, 505.89pt x 505.89pt>
 File: Figures/bloch_rep.png Graphic file (type png)
 
 <use Figures/bloch_rep.png>
 Package pdftex.def Info: Figures/bloch_rep.png used on input line 384.
 (pdftex.def)             Requested size: 404.02908pt x 404.03323pt.
- [36
+ [37
 
-] [37 <./Figures/bloch_rep.png>]
-<Figures/rotatez.png, id=705, 505.89pt x 505.89pt>
+] [38 <./Figures/bloch_rep.png>]
+<Figures/rotatez.png, id=719, 505.89pt x 505.89pt>
 File: Figures/rotatez.png Graphic file (type png)
  <use Figures/rotatez.png>
 Package pdftex.def Info: Figures/rotatez.png used on input line 411.
 (pdftex.def)             Requested size: 181.81184pt x 181.81148pt.
 
-<Figures/rotatex.png, id=706, 505.89pt x 505.89pt>
+<Figures/rotatex.png, id=720, 505.89pt x 505.89pt>
 File: Figures/rotatex.png Graphic file (type png)
  <use Figures/rotatex.png>
 Package pdftex.def Info: Figures/rotatex.png used on input line 419.
 (pdftex.def)             Requested size: 181.81184pt x 181.81148pt.
 
-[38
+[39
 
  <./Figures/rotatez.png> <./Figures/rotatex.png>]
-<Figures/dispersive_shift.png, id=726, 722.7pt x 867.24pt>
+<Figures/dispersive_shift.png, id=739, 722.7pt x 867.24pt>
 File: Figures/dispersive_shift.png Graphic file (type png)
 
 <use Figures/dispersive_shift.png>
 Package pdftex.def Info: Figures/dispersive_shift.png used on input line 455.
 (pdftex.def)             Requested size: 404.02908pt x 484.83066pt.
- [39] [40 <./Figures/dispersive_shift.png>]
+ [40] [41 <./Figures/dispersive_shift.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 479--481
 
  []
 
-[41]
+[42]
 Overfull \hbox (0.9189pt too wide) in paragraph at lines 506--507
 []\T1/ppl/m/n/10.95 At low pow-ers, dis-per-sive mea-sure-ment is QND or Quan-t
 um Non-Demolition,
  []
 
-[42] [43
+[43] [44
 
-] <Figures/measurement_circuit.png, id=771, 455.301pt x 481.3182pt>
+] <Figures/measurement_circuit.png, id=785, 455.301pt x 481.3182pt>
 File: Figures/measurement_circuit.png Graphic file (type png)
 
 <use Figures/measurement_circuit.png>
 Package pdftex.def Info: Figures/measurement_circuit.png used on input line 525
 .
 (pdftex.def)             Requested size: 401.50146pt x 424.45734pt.
- [44
+ [45
 
  <./Figures/measurement_circuit.png>]
-[45]) [46]
+[46]) [47]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (Appendices/AppendixA.tex
 Appendix A.
 1: section
-[47
+[48
 
 
 
-]) [48]
+]) [49]
 \openout2 = `Appendices/AppendixB.aux'.
 
  (Appendices/AppendixB.tex
 Appendix B.
 1: section
-[49
+[50
 
 
 
-]) [50]
+]) [51]
 Overfull \hbox (1.70004pt too wide) in paragraph at lines 337--337
 []\T1/ppl/m/n/10.95 R Bianchetti et al.   Dy-nam-ics of dis-per-sive single-qu
 bit read-out in cir-cuit quan-
@@ -3272,7 +3276,7 @@ r-ence of su-per-con-duct-ing qubits and res-onators\T1/ppl/m/n/10.95 .
  []
 
 1: section
-[51
+[52
 
 
 ]
@@ -3282,27 +3286,23 @@ Overfull \hbox (1.24043pt too wide) in paragraph at lines 337--337
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
-[52]
+[53]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
  (main.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux)
 (Chapters/Chapter3.aux) (Appendices/AppendixA.aux) (Appendices/AppendixB.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6FD97677398E21993010BA9E0E8EB743;4988.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: CD78082E2E41078D8BD403097DDCB5AC;4988.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34528 strings out of 493333
- 683418 string characters out of 3139193
- 1090447 words of memory out of 3000000
- 37335 multiletter control sequences out of 15000+200000
+ 34536 strings out of 493333
+ 683570 string characters out of 3139193
+ 1089511 words of memory out of 3000000
+ 37339 multiletter control sequences out of 15000+200000
  57118 words of font info for 109 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,21n,84p,10379b,2302s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3330,9 +3330,9 @@ ts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
 alatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8
 a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (63 pages, 9061409 bytes).
+Output written on main.pdf (64 pages, 9132374 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 316 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1000 PDF objects out of 1000 (max. 8388607)
+ 319 named destinations out of 1000 (max. 500000)
+ 348 words of extra memory for PDF output out of 10000 (max. 10000000)
 
